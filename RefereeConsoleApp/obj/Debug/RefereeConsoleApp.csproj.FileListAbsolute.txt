@@ -1,0 +1,6 @@
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\TobeConsolePractise\RefereeConsoleApp\bin\Debug\RefereeConsoleApp.exe.config
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\TobeConsolePractise\RefereeConsoleApp\bin\Debug\RefereeConsoleApp.exe
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\TobeConsolePractise\RefereeConsoleApp\bin\Debug\RefereeConsoleApp.pdb
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\TobeConsolePractise\RefereeConsoleApp\obj\Debug\RefereeConsoleApp.exe
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\TobeConsolePractise\RefereeConsoleApp\obj\Debug\RefereeConsoleApp.pdb
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\TobeConsolePractise\RefereeConsoleApp\obj\Debug\RefereeConsoleApp.csprojResolveAssemblyReference.cache

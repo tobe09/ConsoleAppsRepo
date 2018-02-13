@@ -1,0 +1,10 @@
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\TobeConsolePractise\VbConsoleApp\obj\Debug\VbConsoleApp.Resources.resources
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\TobeConsolePractise\VbConsoleApp\obj\Debug\VbConsoleApp.vbproj.GenerateResource.Cache
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\TobeConsolePractise\VbConsoleApp\bin\Debug\VbConsoleApp.exe.config
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\TobeConsolePractise\VbConsoleApp\bin\Debug\VbConsoleApp.exe
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\TobeConsolePractise\VbConsoleApp\bin\Debug\VbConsoleApp.pdb
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\TobeConsolePractise\VbConsoleApp\bin\Debug\VbConsoleApp.xml
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\TobeConsolePractise\VbConsoleApp\obj\Debug\VbConsoleApp.exe
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\TobeConsolePractise\VbConsoleApp\obj\Debug\VbConsoleApp.xml
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\TobeConsolePractise\VbConsoleApp\obj\Debug\VbConsoleApp.pdb
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\TobeConsolePractise\VbConsoleApp\obj\Debug\VbConsoleApp.vbprojResolveAssemblyReference.cache

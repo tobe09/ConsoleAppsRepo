@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F8BAAA9C-E73E-4746-9172-B4B78C860382}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TobeConsolePractise</RootNamespace>
+    <AssemblyName>TobeConsolePractise</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Asynchronous Programming\AsyncClient.cs" />
+    <Compile Include="Asynchronous Programming\AsyncServerClass.cs" />
+    <Content Include="Asynchronous Programming\AsyncService.asmx" />
+    <Compile Include="Boxing\Boxing.cs" />
+    <Compile Include="CheckOrValidation\CheckClass.cs" />
+    <Compile Include="CodeWars\Algorithm\ArrayDiff.cs" />
+    <Compile Include="HackerRank\Algorithms\ArrayManipulation.cs" />
+    <Compile Include="CodeWars\Algorithm\RangeExtraction.cs" />
+    <Compile Include="Conversions\AsciiChar.cs" />
+    <Compile Include="Delegation\BasicDelegate.cs" />
+    <Compile Include="Dependency Injection\Driver.cs" />
+    <Compile Include="Dependency Injection\IVehicle.cs" />
+    <Compile Include="Design Patterns\AttributeDecorator.cs" />
+    <Compile Include="Design Patterns\FactoryPattern.cs" />
+    <Compile Include="Design Patterns\Singleton.cs" />
+    <Compile Include="DSA\BinaryTree.cs" />
+    <Compile Include="DSA\CircularLinkedList.cs" />
+    <Compile Include="DSA\DoublyLinkedList.cs" />
+    <Compile Include="DSA\ILinkedList.cs" />
+    <Compile Include="DSA\SinglyLinkedList.cs" />
+    <Compile Include="EulerProjectNairaland\FibSumEven.cs" />
+    <Compile Include="EulerProjectNairaland\LargestPrimeFactor.cs" />
+    <Compile Include="EulerProjectNairaland\PalindromicNo.cs" />
+    <Compile Include="EulerProjectNairaland\SumOfMult.cs" />
+    <Compile Include="ExtensionMethod\ExtensionClass.cs" />
+    <Compile Include="ExtensionMethod\MethodClass.cs" />
+    <Compile Include="HackerRank\Algorithms\BetweenTwoSets.cs" />
+    <Compile Include="HackerRank\Algorithms\HashTable.cs" />
+    <Compile Include="HackerRank\Competitions\WaysToGiveCheckChess.cs" />
+    <Compile Include="HackerRank\DataStructures\HourGlass.cs" />
+    <Compile Include="HackerRank\Implementation\BreakingRecords.cs" />
+    <Compile Include="HackerRank\Mathematics\GamingArray.cs" />
+    <Compile Include="HackerRank\Mathematics\ToyShop.cs" />
+    <Compile Include="HackerRank\Mathematics\TwoD_Arrays.cs" />
+    <Compile Include="HackerRank\Strings\TextEditor.cs" />
+    <Compile Include="MatrixFractionOverloading\A.cs" />
+    <Compile Include="MatrixFractionOverloading\Fraction.cs" />
+    <Compile Include="MatrixFractionOverloading\Matrix.cs" />
+    <Compile Include="MatrixFractionOverloading\MatrixProfessional.cs" />
+    <Compile Include="HackerRank\TenDaysOfStats\SpearmanCorrCoeff.cs" />
+    <Compile Include="HackerRank\Strings\Anagram.cs" />
+    <Compile Include="HackerRank\Algorithms\BalancedBrackets.cs" />
+    <Compile Include="HackerRank\Algorithms\BinaryMaxOnes.cs" />
+    <Compile Include="HackerRank\TenDaysOfStats\BinomialDistribution.cs" />
+    <Compile Include="HackerRank\Algorithms\BitwiseAnd.cs" />
+    <Compile Include="HackerRank\TenDaysOfStats\CentralLimitTheorem.cs" />
+    <Compile Include="HackerRank\Algorithms\CircularRotation.cs" />
+    <Compile Include="HackerRank\Algorithms\Contacts.cs" />
+    <Compile Include="HackerRank\Algorithms\CountInversions.cs" />
+    <Compile Include="HackerRank\Algorithms\DavisStaircase.cs" />
+    <Compile Include="HackerRank\TenDaysOfStats\GeometricDist.cs" />
+    <Compile Include="HackerRank\TenDaysOfStats\LeastSquaresRegression.cs" />
+    <Compile Include="HackerRank\TenDaysOfStats\MeanMedianMode.cs" />
+    <Compile Include="HackerRank\TenDaysOfStats\MultipleLinearRegression.cs" />
+    <Compile Include="HackerRank\TenDaysOfStats\NormalDistribution.cs" />
+    <Compile Include="HackerRank\TenDaysOfStats\PearsonCorrCoeff.cs" />
+    <Compile Include="HackerRank\TenDaysOfStats\PoissonDistribution.cs" />
+    <Compile Include="HackerRank\TenDaysOfStats\Quartiles.cs" />
+    <Compile Include="HackerRank\Algorithms\QueueStack.cs" />
+    <Compile Include="HackerRank\Algorithms\RansomNotes.cs" />
+    <Compile Include="HackerRank\Algorithms\InsertionSortAdvanced.cs" />
+    <Compile Include="HackerRank\Algorithms\Nodes.cs" />
+    <Compile Include="HackerRank\Algorithms\CharIntValues.cs" />
+    <Compile Include="HackerRank\Algorithms\RadioTransmitters.cs" />
+    <Compile Include="HackerRank\Algorithms\Regex.cs" />
+    <Compile Include="HackerRank\Strings\SuperReducedString.cs" />
+    <Compile Include="HackerRank\Strings\WeightedUniformStrings.cs" />
+    <Compile Include="Inheritance\InheritanceTest.cs" />
+    <Compile Include="InputAndOutput\InputOutput.cs" />
+    <Compile Include="PractiseClasses\HcfLcm.cs" />
+    <Compile Include="PractiseClasses\IntegerByte.cs" />
+    <Compile Include="Interfaces\ExplicitInterface.cs" />
+    <Compile Include="PractiseClasses\PostToFCM.cs" />
+    <Compile Include="PractiseClasses\Prime.cs" />
+    <Compile Include="PractiseClasses\WeekDay.cs" />
+    <Compile Include="PractiseClasses\DefaultValues.cs" />
+    <Compile Include="ExtensionMethod\MethodClassTester.cs" />
+    <Compile Include="IndexerClasses\Indexer.cs" />
+    <Compile Include="IndexerClasses\IndexerTester.cs" />
+    <Compile Include="MediaClasses\AudioFile.cs" />
+    <Compile Include="PractiseClasses\DictionaryTest.cs" />
+    <Compile Include="PractiseClasses\HttpClasses.cs" />
+    <Compile Include="PractiseClasses\Looping.cs" />
+    <Compile Include="MediaClasses\MediaStorage.cs" />
+    <Compile Include="MediaClasses\MediaStorageTester.cs" />
+    <Compile Include="PointExtensionClasses\Point.cs" />
+    <Compile Include="PointExtensionClasses\PointChecker.cs" />
+    <Compile Include="PointExtensionClasses\PointCheckerTester.cs" />
+    <Compile Include="PointExtensionClasses\PointExtension.cs" />
+    <Compile Include="PractiseClasses\BoundsTester.cs" />
+    <Compile Include="Delegation\InstanceDelegate.cs" />
+    <Compile Include="PractiseClasses\Enumeration.cs" />
+    <Compile Include="PractiseClasses\StringFormat.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MediaClasses\VideoFile.cs" />
+    <Compile Include="ClockTimeInfoClasses\Clock.cs" />
+    <Compile Include="ClockTimeInfoClasses\DisplayClockTester.cs" />
+    <Compile Include="ClockTimeInfoClasses\DisplayClock.cs" />
+    <Compile Include="ClockTimeInfoClasses\LogCurrentTime.cs" />
+    <Compile Include="ClockTimeInfoClasses\TimeInfoEventArgs.cs" />
+    <Compile Include="ClockObjectClasses\ClockObject.cs" />
+    <Compile Include="ClockObjectClasses\DisplayClockObjectTester.cs" />
+    <Compile Include="ClockObjectClasses\DisplayClockObject.cs" />
+    <Compile Include="ReflectionPointerThreading\IntPtrReverse.cs" />
+    <Compile Include="ReflectionPointerThreading\Reflect.cs" />
+    <Compile Include="ReflectionPointerThreading\ThreadTest.cs" />
+    <Compile Include="Searching\BinarySearch.cs" />
+    <Compile Include="Searching\InterpolationSearch.cs" />
+    <Compile Include="Searching\ISearch.cs" />
+    <Compile Include="Searching\LinearSearch.cs" />
+    <Compile Include="Service References\ConsoleWeather\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Sort\BubbleSort.cs" />
+    <Compile Include="Sort\InsertionSort.cs" />
+    <Compile Include="Sort\ISort.cs" />
+    <Compile Include="Sort\MergeSort.cs" />
+    <Compile Include="Sort\QuickSort.cs" />
+    <Compile Include="Sort\SelectionSort.cs" />
+    <Compile Include="Sort\ShellSort.cs" />
+    <Compile Include="StackOverflow\StackCheck.cs" />
+    <None Include="packages.config" />
+    <None Include="Service References\ConsoleWeather\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ConsoleWeather\configuration.svcinfo" />
+    <None Include="Service References\ConsoleWeather\configuration91.svcinfo" />
+    <None Include="Service References\ConsoleWeather\asyncweather.disco" />
+    <None Include="Service References\ConsoleWeather\asyncweather.wsdl" />
+    <None Include="Service References\ConsoleWeather\TobeConsolePractise.ConsoleWeather.GetWeatherResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RefereeConsoleApp\RefereeConsoleApp.csproj">
+      <Project>{1c6eb076-0a8d-4808-abb8-3e3c1ae4db19}</Project>
+      <Name>RefereeConsoleApp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VbConsoleApp\VbConsoleApp.vbproj">
+      <Project>{bfe302b7-4103-44e9-94aa-8b398f215ebf}</Project>
+      <Name>VbConsoleApp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ConsoleWeather\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="HackerRank\Databases\" />
+    <Folder Include="HackerRank\ThirtyDaysOfCode\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

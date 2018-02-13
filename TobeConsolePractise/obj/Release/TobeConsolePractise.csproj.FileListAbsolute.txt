@@ -1,0 +1,3 @@
+c:\users\ooluro\documents\visual studio 2013\Projects\TobeConsolePractise\TobeConsolePractise\bin\Release\TobeConsolePractise.exe.config
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\TobeConsolePractise\TobeConsolePractise\bin\Release\TobeConsolePractise.exe.config
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\TobeConsolePractise\TobeConsolePractise\obj\Release\TobeConsolePractise.csprojResolveAssemblyReference.cache
