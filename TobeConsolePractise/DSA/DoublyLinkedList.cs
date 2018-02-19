@@ -6,14 +6,62 @@ using System.Threading.Tasks;
 
 namespace TobeConsolePractise
 {
-    class DoublyLinkedList : ILinkedList
+    public class DoublyLinkedList : ILinkedList
     {
-        public NodeBi Head { get; set; }
-        public NodeBi Last { get; set; }
+        public class Node
+        {
+            public int Data { get; set; }
+            public int Key { get; set; }
+            public Node Next { get; set; }
+            public Node Prev { get; set; }
+        }
+
+        public Node Head { get; set; }
+        public Node Last { get; set; }
+
+        //head is sorted in ascending order
+        public static Node SortedInsert(Node head, int data)
+        {
+            Node newNode = new Node();
+            newNode.Data = data;
+            if (head == null)
+            {
+                return newNode;
+            }
+            else if (data <= head.Data)
+            {
+                newNode.Next = head;
+                head.Prev = newNode;
+                return newNode;
+            }
+            else
+            {
+                Node temp = SortedInsert(head.Next, data);
+                head.Next = temp;
+                temp.Prev = head;
+                return head;
+            }
+        }
+
+        public static Node Reverse(Node head)
+        {
+            if (head == null) return null;
+            head.Prev = head.Next;
+            head.Next = null;
+            while (head.Prev != null)
+            {
+                head = head.Prev;
+                Node temp = head.Next;
+                head.Next = head.Prev;
+                head.Prev = temp;
+            }
+
+            return head;
+        }
 
         public void PrintList()
         {
-            NodeBi temp = Head;
+            Node temp = Head;
 
             Console.WriteLine("\n[ ");
 
@@ -28,13 +76,13 @@ namespace TobeConsolePractise
 
         public void PrintBackwards()
         {
-            NodeBi temp = Last;
+            Node temp = Last;
 
             Console.WriteLine("\n[ ");
 
             while (temp != null)
             {
-                Console.WriteLine("Key: " + temp.Key + " Data: " + temp.Data);
+                Console.WriteLine(" Data: " + temp.Data);
                 temp = temp.Prev;
             }
 
@@ -43,7 +91,7 @@ namespace TobeConsolePractise
 
         public void InsertFirst(int key, int data)
         {
-            NodeBi link = new NodeBi();
+            Node link = new Node();
             link.Key = key;
             link.Data = data;
 
@@ -58,7 +106,7 @@ namespace TobeConsolePractise
 
         public void InsertLast(int key, int data)
         {
-            NodeBi link = new NodeBi();
+            Node link = new Node();
             link.Key = key;
             link.Data = data;
 
@@ -73,9 +121,9 @@ namespace TobeConsolePractise
             Last = link;            //point last to new last link
         }
 
-        public NodeBi DeleteFirst()
+        public Node DeleteFirst()
         {
-            NodeBi temp = Head;     //save refrence to first link
+            Node temp = Head;     //save refrence to first link
 
             if (Head.Next == null)
                 Last = null;
@@ -85,9 +133,9 @@ namespace TobeConsolePractise
             return temp;            //return deleted link
         }
 
-        public NodeBi DeleteLast()
+        public Node DeleteLast()
         {
-            NodeBi temp = Last;
+            Node temp = Last;
 
             if (Head.Next == null)
                 Head = null;
@@ -108,18 +156,18 @@ namespace TobeConsolePractise
         {
             int length = 0;
 
-            for (NodeBi current = Head; current != null; current = current.Next)
+            for (Node current = Head; current != null; current = current.Next)
                 length++;
 
             return length;
         }
 
-        public NodeBi Find(int key)
+        public Node Find(int key)
         {
             if (Head == null)
                 return null;
 
-            NodeBi current = Head;
+            Node current = Head;
             while (current.Key != key)
             {
                 if (current.Next == null)
@@ -131,10 +179,10 @@ namespace TobeConsolePractise
             return current;
         }
 
-        public NodeBi Delete(int key)
+        public Node Delete(int key)
         {
-            NodeBi current = Head;
-            NodeBi previous = null;
+            Node current = Head;
+            Node previous = null;
 
             if (Head == null)
                 return null;
@@ -165,7 +213,7 @@ namespace TobeConsolePractise
 
         public bool InsertAfter(int key, int newKey, int data)
         {
-            NodeBi current = Head;
+            Node current = Head;
 
             if (IsEmpty())
                 return false;
@@ -178,7 +226,7 @@ namespace TobeConsolePractise
                     current = current.Next;     //move TobeConsolePractise the next link
             }
 
-            NodeBi newLink = new NodeBi();
+            Node newLink = new Node();
             newLink.Key = key;
             newLink.Data = data;
 
@@ -212,7 +260,7 @@ namespace TobeConsolePractise
             list.InsertFirst(8, 80);
             Console.WriteLine("First to Last");
             list.PrintList();
-            NodeAbstract a = list.Head;         //to scan its runtime content
+            Node a = list.Head;         //to scan its runtime content
             list.PrintBackwards();
 
             Console.WriteLine("After deleting the last record");
@@ -224,7 +272,7 @@ namespace TobeConsolePractise
             list.PrintList();
 
             Console.WriteLine("Find item with key 3");
-            NodeBi foundNode = list.Find(3);
+            Node foundNode = list.Find(3);
             if (foundNode == null)
                 Console.WriteLine("Element not found");
             else
@@ -248,6 +296,11 @@ namespace TobeConsolePractise
             list.PrintList();
 
             Console.ReadKey();
+
+        }
+
+        public static void Run2()
+        {
 
         }
     }

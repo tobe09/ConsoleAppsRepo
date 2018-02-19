@@ -17,3 +17,16 @@ C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\TobeConsolePractise\T
 C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\TobeConsolePractise\TobeConsolePractise\bin\Debug\VbConsoleApp.xml
 C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\TobeConsolePractise\TobeConsolePractise\bin\Debug\Newtonsoft.Json.dll
 C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\TobeConsolePractise\TobeConsolePractise\bin\Debug\Newtonsoft.Json.xml
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\TobeConsolePractise.exe.config
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\TobeConsolePractise\obj\Debug\TobeConsolePractise.exe
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\TobeConsolePractise\obj\Debug\TobeConsolePractise.pdb
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\TobeConsolePractise.exe
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\TobeConsolePractise.pdb
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\Newtonsoft.Json.dll
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\RefereeConsoleApp.exe
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\VbConsoleApp.exe
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\RefereeConsoleApp.pdb
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\VbConsoleApp.pdb
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\VbConsoleApp.xml
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\Newtonsoft.Json.xml
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\TobeConsolePractise\obj\Debug\TobeConsolePractise.csprojResolveAssemblyReference.cache

@@ -91,8 +91,6 @@ namespace TobeConsolePractise
 
         static int Rook(int pos, char[][] board)
         {
-            int ways = 0;
-
             if (pos == 0)
             {
 

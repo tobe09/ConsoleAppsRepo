@@ -15,6 +15,51 @@ namespace TobeConsolePractise
             this.data = data;
         }
 
+        public static NodeTest Reverse2(NodeTest head)
+        {
+            List<int> values = new List<int>();
+
+            NodeTest temp = head;
+            while (temp != null)
+            {
+                values.Add(temp.data);
+                temp = temp.next;
+            }
+
+            NodeTest revHead = null;
+            if (values.Count > 0)
+            {
+                revHead = new NodeTest(values[values.Count - 1]);
+
+                for (int i = values.Count - 2; i >= 0; i--)
+                {
+                    NodeTest newNode = new NodeTest(values[i]);
+
+                    NodeTest start = revHead;
+                    while (start.next != null)
+                        start = start.next;
+                    start.next = newNode;
+                }
+            }
+
+            return revHead;
+        }
+
+        public static NodeTest Reverse(NodeTest head)
+        {
+            NodeTest rev = null, temp;
+
+            while (head != null)
+            {
+                temp = head.next;
+                head.next = rev;
+                rev = head;
+                head = temp;
+            }
+
+            return rev;
+        }
+
         public static NodeTest insert(NodeTest head, int data)
         {
             ////recursive version
@@ -40,13 +85,62 @@ namespace TobeConsolePractise
             return head;
         }
 
+        public static NodeTest InsertNth(NodeTest head, int data, int position)
+        {
+            NodeTest newNode = new NodeTest(data);
+            if (head == null)
+            {
+                head = newNode;
+            }
+            else if (position == 0)
+            {
+                newNode.next = head;
+                head = newNode;
+            }
+            else
+            {
+                NodeTest temp = head;
+                for (int i = 0; i < position - 1 && temp.next != null; i++)
+                {
+                    temp = temp.next;
+                }
+                //can use if(temp.next==null) to check for large positions
+                NodeTest tempNext = temp.next;
+                temp.next = newNode;
+                newNode.next = tempNext;
+            }
+
+            return head;
+        }
+
+        public static NodeTest Delete(NodeTest head, int position)
+        {
+            if (position == 0)
+            {
+                head = head.next;
+                return head;
+            }
+
+            NodeTest temp = head;
+            for (int i = 0; i < position - 1 && temp.next != null; i++)
+            {
+                temp = temp.next;
+            }
+
+            if (temp.next != null)
+            {
+                temp.next = temp.next.next;
+            }
+
+            return head;
+        }
+
         public static NodeTest RemoveDuplicates(NodeTest head)
         {
             NodeTest start = head;
             while (start != null)
             {
                 NodeTest innerNode = start.next;
-                NodeTest previous;
                 while (innerNode != null && innerNode.next != null)
                 {
                     if (start.data == innerNode.next.data)
@@ -88,7 +182,58 @@ namespace TobeConsolePractise
             }
 
         }
-   
+
+        public static int FindMergeNode(NodeTest headA, NodeTest headB)
+        {
+            // Complete this function
+            // Do not write the main method.
+            HashSet<NodeTest> hs = new HashSet<NodeTest>();
+
+            NodeTest tempA = headA;
+            NodeTest tempB = headB;
+            while (tempA != null || tempB != null)
+            {
+                if (!hs.Contains(tempA) || tempA == null) hs.Add(tempA);
+                else return tempA.data;
+                if (!hs.Contains(tempB) || tempB == null) hs.Add(tempB);
+                else return tempB.data;
+                if (tempA != null) tempA = tempA.next;
+                if (tempB != null) tempB = tempB.next;
+            }
+
+            return -1;      //not possible if merge exists
+        }
+
+        public static int FindMergeNode2(Node headA, Node headB)
+        {
+            Node currentA = headA;
+            Node currentB = headB;
+
+            //Do till the two nodes are the same, can go into an infinite loop
+            while (currentA != currentB)
+            {
+                //if you reached the end of one list start at the beginning of the other one
+                //currentA
+                if (currentA.Next == null)
+                {
+                    currentA = headB;
+                }
+                else
+                {
+                    currentA = currentA.Next;
+                }
+                //currentB
+                if (currentB.Next == null)
+                {
+                    currentB = headA;
+                }
+                else
+                {
+                    currentB = currentB.Next;
+                }
+            }
+            return currentB.Data;
+        }
 
         public static void display(NodeTest head)
         {
@@ -100,18 +245,60 @@ namespace TobeConsolePractise
             }
         }
 
+        public static void ReversePrint(NodeTest head)
+        {
+            //if (head != null)
+            //{
+            //    ReversePrint(head.next);
+            //    Console.WriteLine(head.data);
+            //}
+
+            List<int> values = new List<int>();
+
+            NodeTest temp = head;
+            while (temp != null)
+            {
+                values.Add(temp.data);
+                temp = temp.next;
+            }
+
+            for (int i = values.Count - 1; i >= 0; i--)
+                Console.WriteLine(values[i]);
+        }
+
         public static void Run()
         {
             NodeTest root = null;
-            int T = Int32.Parse(Console.ReadLine());
-            while (T-- > 0)
+            int t = 5;
+            while (t-- > 0)
             {
-                int data = Int32.Parse(Console.ReadLine());
+                int data = t;
                 root = insert(root, data);
             }
             root = RemoveDuplicates(root);
             display(root);
-            Console.ReadKey();
+            Console.WriteLine();
+            root = Reverse2(root);
+            display(root);
+        }
+
+        public static void Run2()
+        {
+            NodeTest head = null;
+            for (int i = 1; i <= 5; i++)
+            {
+                head = NodeTest.insert(head, i);
+            }
+            head = NodeTest.InsertNth(head, 6, 0);
+            head = NodeTest.InsertNth(head, 7, 1);
+            head = NodeTest.InsertNth(head, 8, 2);
+            head = NodeTest.InsertNth(head, 9, 5);
+            head = NodeTest.InsertNth(head, 10, 13);
+
+            head = NodeTest.Delete(head, 0);
+            head = NodeTest.Delete(head, 1);
+            head = NodeTest.Delete(head, 4);
+            head = NodeTest.Delete(head, 14);
         }
     }
 
@@ -132,7 +319,7 @@ namespace TobeConsolePractise
             return maxHeight + 1;
         }
 
-        static void levelOrder(Node root)
+        static void InOrder(Node root)
         {
             Queue<Node> queue = new Queue<Node>();
             queue.Enqueue(root);
@@ -146,20 +333,6 @@ namespace TobeConsolePractise
             }
         }
 
-        static void depthOrder(Node root)
-        {
-            Queue<Node> queue = new Queue<Node>();
-            queue.Enqueue(root);
-
-            while (queue.Count > 0)
-            {
-                Node current = queue.Dequeue();
-                Console.Write(current.data + " ");
-                if (current.left != null) queue.Enqueue(current.left);
-                if (current.right != null) queue.Enqueue(current.right);
-            }
-        }
-        
         static Node insert(Node root, int data)
         {
             if (root == null)
@@ -197,7 +370,7 @@ namespace TobeConsolePractise
             }
             int height = getHeight(root);
             Console.WriteLine(height);
-            levelOrder(root);
+            InOrder(root);
             Console.ReadKey();
         }
 

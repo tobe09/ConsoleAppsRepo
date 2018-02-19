@@ -68,6 +68,55 @@ namespace TobeConsolePractise
             Sort(0, Count() - 1, showDetail);
         }
 
+        //Basic quick sort algorithm
+        static int[] QuickSortBasic(int[] arr)
+        {
+            if (arr.Length <= 1) return arr;
+
+            int pivot = arr[0];
+            List<int> lesser = new List<int>();
+            List<int> greater = new List<int>();
+
+            for (int i = 1; i < arr.Length; i++)
+            {
+                if (arr[i] < pivot)
+                {
+                    lesser.Add(arr[i]);
+                }
+                else
+                {
+                    greater.Add(arr[i]);
+                }
+            }
+
+            int[] less = QuickSortBasic(lesser.ToArray());
+            int[] great = QuickSortBasic(greater.ToArray());
+
+            int[] sortedArr = Concat(less, pivot, great);
+
+            return sortedArr;
+        }
+
+        static int[] Concat(int[] lesser, int pivot, int[] greater)
+        {
+            int[] concatArr = new int[lesser.Length + greater.Length + 1];
+
+            for (int i = 0; i < lesser.Length; i++)
+            {
+                concatArr[i] = lesser[i];
+            }
+
+            concatArr[lesser.Length] = pivot;
+
+            for (int i = 0; i < greater.Length; i++)
+            {
+                int pos = lesser.Length + i + 1;
+                concatArr[pos] = greater[i];
+            }
+
+            return concatArr;
+        }
+
         public static void Run(int iteration = 200)
         {
             //SortBase.Run(new QuickSort(iteration), null, false);

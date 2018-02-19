@@ -52,6 +52,7 @@
     <Compile Include="Asynchronous Programming\AsyncClient.cs" />
     <Compile Include="Asynchronous Programming\AsyncServerClass.cs" />
     <Content Include="Asynchronous Programming\AsyncService.asmx" />
+    <Compile Include="Asynchronous Programming\TaskTest.cs" />
     <Compile Include="Boxing\Boxing.cs" />
     <Compile Include="CheckOrValidation\CheckClass.cs" />
     <Compile Include="CodeWars\Algorithm\ArrayDiff.cs" />
