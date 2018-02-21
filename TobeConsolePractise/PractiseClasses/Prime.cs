@@ -12,9 +12,9 @@ namespace TobeConsolePractise
         {
             long largest = 1;
 
-            long rootNo = (long)Math.Sqrt(no);
-            //check if values less than root of the number is a factor
-            for (int innerLoop = 2; innerLoop <= rootNo; innerLoop++)
+            long end = no / 2;    
+            //check if values less than half the number is a factor
+            for (long innerLoop = 2; innerLoop <= end; innerLoop++)
             {
                 if (no % innerLoop == 0)
                 {
@@ -27,6 +27,8 @@ namespace TobeConsolePractise
                     }
 
                     if (primeCountInnerLoop == 0 && innerLoop > largest) largest = innerLoop;
+
+                    end = no / innerLoop;
                 }
             }
 
@@ -83,32 +85,7 @@ namespace TobeConsolePractise
             return isPrime;
         }
 
-        static bool IsPrimeFast(int no)
-        {
-            bool status = true;
-
-            no = Math.Abs(no);
-            if (no < 2)
-            {
-                Console.WriteLine("Not Prime");
-            }
-            else
-            {
-                status = true;   //prime
-                int rootNo = (int)Math.Sqrt(no);
-                for (int j = 2; j <= rootNo; j++)
-                {
-                    if (no % j == 0)
-                    {
-                        status = false;
-                        break;
-                    }
-                }
-            }
-
-            return status;
-        }
-
+        //not optimized
         public string primeNumbers(int i, int n)
         {
             string values = "The prime numbers between " + i + " and " + n + " are: ";

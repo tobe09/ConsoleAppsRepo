@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TobeConsolePractise
 {
@@ -28,25 +24,25 @@ namespace TobeConsolePractise
                 return _instance;
             }
         }
-    }
 
-    public class TestSingleton
-    {
-        Singleton instanceOne = Singleton.getInstance;
-        Singleton instanceTwo = Singleton.getInstance;
-
-        public void testSingletonUniqueness()
+        public class TestSingleton
         {
-            instanceOne.id = 2;
-            instanceOne.description = "Modified";
-            Console.WriteLine("instanceOne:   id= " + instanceOne.id + ", description= " + instanceOne.description);
-            Console.WriteLine("instanceTwo:   id= " + instanceTwo.id + ", description= " + instanceTwo.description);
-        }
+            Singleton instanceOne = Singleton.getInstance;
+            Singleton instanceTwo = Singleton.getInstance;
 
-        public static void run()
-        {
-            new TestSingleton().testSingletonUniqueness();
-            Console.ReadKey();
+            public void testSingletonUniqueness()
+            {
+                instanceOne.id = 2;
+                instanceOne.description = "Modified";
+                Console.WriteLine("instanceOne:   id= " + instanceOne.id + ", description= " + instanceOne.description);
+                Console.WriteLine("instanceTwo:   id= " + instanceTwo.id + ", description= " + instanceTwo.description);
+            }
+
+            public static void run()
+            {
+                new TestSingleton().testSingletonUniqueness();
+                Console.ReadKey();
+            }
         }
     }
 }

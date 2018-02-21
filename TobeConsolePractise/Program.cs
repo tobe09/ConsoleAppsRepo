@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TobeConsolePractise
 {
@@ -15,6 +11,9 @@ namespace TobeConsolePractise
             //BreakingRecords.Run();
             //NodeTest.Run();
             //TaskTest.Run();
+            //BalancedBrackets.Run();
+            //MaxTriangles.Run();
+            //LargestPrimeFactor.Run();
 
             Console.ReadKey();
         }

@@ -45,10 +45,10 @@ namespace TobeConsolePractise
             Console.ReadKey();
         }
 
-        public static bool isBalanced(string expression)
+        static string isBalanced(string expression)
         {
             // Must be even
-            if ((expression.Length & 1) == 1) return false;
+            if ((expression.Length & 1) == 1) return "NO";
             else
             {
                 Stack<char> s = new Stack<char>();
@@ -61,13 +61,13 @@ namespace TobeConsolePractise
                         case '[': s.Push(']'); break;
                         default:
                             if (s.Count == 0 || bracket != s.Pop())
-                                return false;
+                                return "NO";
                             break;
                     }
                 }
-                return s.Count == 0;
-            }
 
+                return s.Count == 0 ? "YES" : "NO";
+            }
         }
     }
 }

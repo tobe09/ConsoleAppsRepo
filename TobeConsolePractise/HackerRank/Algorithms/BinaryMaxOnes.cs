@@ -17,7 +17,7 @@ namespace TobeConsolePractise
             while (n > 1)
             {
                 bin += n % 2;
-                n = n / 2;
+                n /= 2;
             }
             bin += n;
 

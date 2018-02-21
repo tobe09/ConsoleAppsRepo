@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TobeConsolePractise
 {
@@ -13,9 +9,9 @@ namespace TobeConsolePractise
         {
             long largest = 1;
 
-            long rootNo=(long)Math.Sqrt(no);
-            //check if values less than root of the number is a factor
-            for (int innerLoop = 2; innerLoop <= rootNo; innerLoop++)
+            long end = no / 2;    //(long)Math.Sqrt(no);
+            //check if values less than half of the number is a factor
+            for (long innerLoop = 2; innerLoop <= end; innerLoop++)
             {
                 if (no % innerLoop == 0)
                 {
@@ -28,6 +24,7 @@ namespace TobeConsolePractise
                     }
 
                     if (primeCountInnerLoop == 0 && innerLoop > largest) largest = innerLoop;
+                    end = no / innerLoop;
                 }
             }
 
@@ -38,12 +35,12 @@ namespace TobeConsolePractise
 
         public static void Run(long no = 600851475143)
         {
+            //no = 2 * 3 * 6 * 9 * 23 * 17 * 29 * 62;
             Stopwatch stopWatch = Stopwatch.StartNew();
             long largestPrime = new LargestPrimeFactor().LargestPrime(no);
             double time = stopWatch.Elapsed.TotalMilliseconds;
             Console.WriteLine("The largest prime factor of " + no + " is: " + largestPrime);
             Console.WriteLine("Time taken: " + time + " milliseconds");
-            Console.ReadKey();
         }
     }
 }

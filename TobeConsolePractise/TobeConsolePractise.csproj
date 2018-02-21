@@ -78,6 +78,7 @@
     <Compile Include="ExtensionMethod\MethodClass.cs" />
     <Compile Include="HackerRank\Algorithms\BetweenTwoSets.cs" />
     <Compile Include="HackerRank\Algorithms\HashTable.cs" />
+    <Compile Include="HackerRank\Algorithms\MaxTriangles.cs" />
     <Compile Include="HackerRank\Competitions\WaysToGiveCheckChess.cs" />
     <Compile Include="HackerRank\DataStructures\HourGlass.cs" />
     <Compile Include="HackerRank\Implementation\BreakingRecords.cs" />
