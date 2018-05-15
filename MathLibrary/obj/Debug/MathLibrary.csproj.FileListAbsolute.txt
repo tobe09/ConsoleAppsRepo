@@ -1,0 +1,5 @@
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\MathLibrary\bin\Debug\MathLibrary.XML
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\MathLibrary\bin\Debug\MathLibrary.dll
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\MathLibrary\bin\Debug\MathLibrary.pdb
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\MathLibrary\obj\Debug\MathLibrary.dll
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\MathLibrary\obj\Debug\MathLibrary.pdb

@@ -19,7 +19,7 @@ namespace TobeConsolePractise
         {
             get
             {
-                return this.type;
+                return type;
             }
         }
     }
@@ -119,8 +119,8 @@ namespace TobeConsolePractise
         public static void Run(VehicleType vehicle, bool useDecorator=true)
         {
             Vehicle v;
-            if (useDecorator) v = VehicleFactory.GetVehicle(vehicle);
-            else v = VehicleFactory.GetVehicle1(vehicle);
+            if (useDecorator) v = GetVehicle(vehicle);
+            else v = GetVehicle1(vehicle);
             Console.WriteLine(v);
             Console.ReadKey();
         }

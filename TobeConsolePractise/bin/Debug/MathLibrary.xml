@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MathLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:MathLibrary.Arithmetic">
+             <summary>
+            Holds methods for performing basic arithmetic operations
+             </summary>
+        </member>
+        <member name="M:MathLibrary.Arithmetic.#ctor">
+             <summary>
+            Holds methods for performing basic arithmetic operations (constructor)
+             </summary>
+        </member>
+        <member name="M:MathLibrary.Arithmetic.Add(System.Double,System.Double)">
+            <summary>
+            A method to add two numbers
+            </summary>
+            <param name="a">The first parameter</param>
+            <param name="b">The second parameter</param>
+            <returns>double</returns>
+            <exception cref = "T:System.IndexOutOfRangeException" ></exception >
+            <exception cref="T:System.FormatException"></exception>
+        </member>
+        <member name="M:MathLibrary.Arithmetic.Substract(System.Double,System.Double)">
+            <summary>
+            A method to substract two numbers
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns>double</returns>
+        </member>
+        <member name="M:MathLibrary.Arithmetic.Difference(System.Double,System.Double)">
+            <summary>
+            A method to return the difference between two numbers
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns>double</returns>
+        </member>
+        <member name="M:MathLibrary.Arithmetic.MathAbs(System.Double)">
+            <summary>
+            Generates the absolute value of a number
+            </summary>
+            <param name="a"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

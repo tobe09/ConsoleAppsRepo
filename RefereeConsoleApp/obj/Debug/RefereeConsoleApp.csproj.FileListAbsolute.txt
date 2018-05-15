@@ -4,3 +4,14 @@ C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\TobeConsolePractise\R
 C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\TobeConsolePractise\RefereeConsoleApp\obj\Debug\RefereeConsoleApp.exe
 C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\TobeConsolePractise\RefereeConsoleApp\obj\Debug\RefereeConsoleApp.pdb
 C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\TobeConsolePractise\RefereeConsoleApp\obj\Debug\RefereeConsoleApp.csprojResolveAssemblyReference.cache
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\RefereeConsoleApp\bin\Debug\RefereeConsoleApp.exe.config
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\RefereeConsoleApp\bin\Debug\RefereeConsoleApp.exe
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\RefereeConsoleApp\bin\Debug\RefereeConsoleApp.pdb
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\RefereeConsoleApp\obj\Debug\RefereeConsoleApp.exe
+C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\RefereeConsoleApp\obj\Debug\RefereeConsoleApp.pdb
+C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\RefereeConsoleApp\bin\Debug\RefereeConsoleApp.exe.config
+C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\RefereeConsoleApp\bin\Debug\RefereeConsoleApp.exe
+C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\RefereeConsoleApp\bin\Debug\RefereeConsoleApp.pdb
+C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\RefereeConsoleApp\obj\Debug\RefereeConsoleApp.csprojResolveAssemblyReference.cache
+C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\RefereeConsoleApp\obj\Debug\RefereeConsoleApp.exe
+C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\RefereeConsoleApp\obj\Debug\RefereeConsoleApp.pdb

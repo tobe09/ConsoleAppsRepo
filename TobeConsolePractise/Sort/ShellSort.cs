@@ -27,7 +27,7 @@ namespace TobeConsolePractise
                 {
                     valueToInsert = values[outer];
                     inner = outer;
-                    while (inner > interval - 1 && values[inner - interval] >= valueToInsert)
+                    while (inner >= interval && values[inner - interval] >= valueToInsert)
                     {
                         values[inner] = values[inner - interval];
                         inner -= interval;
@@ -45,7 +45,7 @@ namespace TobeConsolePractise
 
         public static void Run(int iteration = 200)
         {
-            SortBase.Run(new ShellSort(iteration), showDetail: false);
+            Run(new ShellSort(iteration), showDetail: false);
         }
     }
 }

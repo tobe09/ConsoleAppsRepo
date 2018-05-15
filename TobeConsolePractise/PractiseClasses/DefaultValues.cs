@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace TobeConsolePractise
 {
     /// <summary>
-    /// To est integer and byte default values as well as overflow
+    /// To test integer and byte default values as well as overflow
     /// </summary>
     class DefaultValues
     {

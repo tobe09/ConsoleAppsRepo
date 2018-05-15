@@ -41,8 +41,6 @@ namespace TobeConsolePractise
             // Free HGlobal memory
             Marshal.FreeHGlobal(dptr);
             Marshal.FreeHGlobal(sptr);
-
-            Console.ReadKey();
         }
     }
 
