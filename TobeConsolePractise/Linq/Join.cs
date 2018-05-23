@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TobeConsolePractise
 {
@@ -20,14 +18,37 @@ namespace TobeConsolePractise
             departments.Add(new Department { DepartmentId = 3, DepartmentName = "Dept3" });
 
             List<Employee> employees = new List<Employee>();
-            employees.Add(new Employee { EmployeeId = 11, EmployeeName = "Emp1", DepartmentId = 1 });
-            employees.Add(new Employee { EmployeeId = 31, EmployeeName = "Emp3", DepartmentId = 3 });
-            employees.Add(new Employee { EmployeeId = 41, EmployeeName = "Emp4", DepartmentId = 4 });
+            employees.Add(new Employee { EmployeeId = 1, EmployeeName = "Emp1", DepartmentId = 1 });
+            employees.Add(new Employee { EmployeeId = 3, EmployeeName = "Emp3", DepartmentId = 3 });
+            employees.Add(new Employee { EmployeeId = 4, EmployeeName = "Emp4", DepartmentId = 4 });
 
             var query = from dept in departments
                         join emp in employees on
-                            dept.DepartmentId equals emp.DepartmentId
-                        select new { dept.DepartmentName, EmpName = emp.EmployeeName};
+                          new { dept.DepartmentId, key2 = dept.DepartmentId } equals new { emp.DepartmentId, key2 = emp.EmployeeId }
+                        select new { dept.DepartmentName, EmpName = emp.EmployeeName };
+
+            var newQuery = departments.Join(
+                employees,
+                d => new { Prop1 = d.DepartmentId, Prop2 = d.DepartmentId },
+                e =>
+                {
+                    return new { Prop1 = e.DepartmentId, Prop2 = e.EmployeeId };
+                },
+                (d, e) => new { d.DepartmentName, e.EmployeeName })
+                .Join(
+                departments,
+                a => a.DepartmentName,
+                b => b.DepartmentName,
+                (a, b) => new { a.EmployeeName, b.DepartmentName }
+                )
+                .OrderBy(a => a.DepartmentName)
+                .OrderByDescending(a => a.DepartmentName)
+                .ThenByDescending(a => a.EmployeeName)
+                .Select(val => val)
+                .GroupBy(s => s.EmployeeName)
+                .DefaultIfEmpty();
+
+            var q = departments.SelectMany(d => new List<int> { });
 
             var query2 = from dept in departments
                          join emp in employees on

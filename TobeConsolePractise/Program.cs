@@ -25,6 +25,7 @@ namespace TobeConsolePractise
             //DiPractise.Run();
             //AddShift.Run();
             //Serialization.DtoSerialize.Run();
+            Join.Run();
 
             Console.ReadKey();
         }
