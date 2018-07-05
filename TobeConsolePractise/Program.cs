@@ -1,10 +1,17 @@
 ﻿using System;
-using System.Linq;
+using System.Collections.Generic;
 
 namespace TobeConsolePractise
 {
     class Program
     {
+        static List<int> list;
+
+        /// <summary>
+        /// Main console app
+        /// </summary>
+        /// <param name="args"></param>
+        /// <devdoc>Really cool aint it</devdoc>
         public static void Main(string[] args)
         {
             //MergeSort.Run();
@@ -25,9 +32,14 @@ namespace TobeConsolePractise
             //DiPractise.Run();
             //AddShift.Run();
             //Serialization.DtoSerialize.Run();
-            Join.Run();
+            //Join.Run();
+            //Cousant.EncryptDecrypt.Run();
+            //Mapping_EF.PractiseEf.Run();
+            //new Mapping_EF.TestService().UpdateStudent_Did_Update();
 
             Console.ReadKey();
         }
     }
 }
+
+

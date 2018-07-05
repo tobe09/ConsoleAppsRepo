@@ -3,3 +3,9 @@ C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePracti
 C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\MathLibrary\bin\Debug\MathLibrary.pdb
 C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\MathLibrary\obj\Debug\MathLibrary.dll
 C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\MathLibrary\obj\Debug\MathLibrary.pdb
+C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\MathLibrary\bin\Debug\MathLibrary.XML
+C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\MathLibrary\bin\Debug\MathLibrary.dll
+C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\MathLibrary\bin\Debug\MathLibrary.pdb
+C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\MathLibrary\obj\Debug\MathLibrary.csprojResolveAssemblyReference.cache
+C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\MathLibrary\obj\Debug\MathLibrary.dll
+C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\MathLibrary\obj\Debug\MathLibrary.pdb

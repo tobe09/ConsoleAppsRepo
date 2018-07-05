@@ -1,23 +1,10 @@
-C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\TobeConsolePractise\obj\Debug\TobeConsolePractise.csprojResolveAssemblyReference.cache
-C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\TobeConsolePractise.exe.config
-C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\TobeConsolePractise.exe
-C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\TobeConsolePractise.pdb
-C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\MathLibrary.dll
-C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\Newtonsoft.Json.dll
-C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\RefereeConsoleApp.exe
-C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\VbConsoleApp.exe
-C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\RefereeConsoleApp.pdb
-C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\VbConsoleApp.pdb
-C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\VbConsoleApp.xml
-C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\MathLibrary.xml
-C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\Newtonsoft.Json.xml
-C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\TobeConsolePractise\obj\Debug\TobeConsolePractise.exe
-C:\Users\NeptuneDev1\Documents\Visual Studio 2013\Projects\Git\TobeConsolePractise\TobeConsolePractise\obj\Debug\TobeConsolePractise.pdb
 C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\TobeConsolePractise.exe.config
 C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\obj\Debug\TobeConsolePractise.exe
 C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\obj\Debug\TobeConsolePractise.pdb
+C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\obj\Debug\TobeConsolePractise.csprojResolveAssemblyReference.cache
 C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\TobeConsolePractise.exe
 C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\TobeConsolePractise.pdb
+C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\AutoMapper.dll
 C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\MathLibrary.dll
 C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\Newtonsoft.Json.dll
 C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\RefereeConsoleApp.exe
@@ -25,6 +12,28 @@ C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeC
 C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\RefereeConsoleApp.pdb
 C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\VbConsoleApp.pdb
 C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\VbConsoleApp.xml
+C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\AutoMapper.xml
 C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\MathLibrary.xml
 C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\Newtonsoft.Json.xml
-C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\obj\Debug\TobeConsolePractise.csprojResolveAssemblyReference.cache
+C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\EntityFramework.dll
+C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\EntityFramework.xml
+C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\Castle.Core.dll
+C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\Moq.dll
+C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\System.ValueTuple.dll
+C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\Castle.Core.xml
+C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\Moq.pdb
+C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\Moq.xml
+C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\System.ValueTuple.xml
+C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\nunit.framework.dll
+C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\nunit.framework.pdb
+C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\nunit.framework.xml
+C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\NUnit3.TestAdapter.dll
+C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\NUnit3.TestAdapter.pdb
+C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\nunit.engine.dll
+C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\nunit.engine.api.dll
+C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\Mono.Cecil.dll
+C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\MathLibrary.pdb
