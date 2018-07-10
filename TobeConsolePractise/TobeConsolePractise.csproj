@@ -109,6 +109,8 @@
   <ItemGroup>
     <Compile Include="Asynchronous Programming\AsyncClient.cs" />
     <Compile Include="Asynchronous Programming\AsyncServerClass.cs" />
+    <Compile Include="Design Patterns\MementoPattern.cs" />
+    <Compile Include="Linq\Expressions.cs" />
     <Compile Include="Mapping_EF\Entities.cs" />
     <Compile Include="Mapping_EF\PractiseEf.cs" />
     <Compile Include="Mapping_EF\TestService.cs" />

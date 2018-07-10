@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.Entity;
+using System.Dynamic;
 using System.Linq;
 
 namespace TobeConsolePractise.Mapping_EF
@@ -11,7 +11,7 @@ namespace TobeConsolePractise.Mapping_EF
         {
             var practiseService = new PractiseService();
             //practiseService.PerformActions(new MyContext());
-            //practiseService.UpdateStudent(new MyContext(), new { Id = 2, Name = "Rash", CreatedDate = DateTime.Now, AdministratorId = 0 });
+            practiseService.UpdateStudent(new MyContext(), new { Id = 2, Name = "Rash", CreatedDate = DateTime.Now, AdministratorId = 1 });
         }
     }
 
@@ -129,15 +129,16 @@ namespace TobeConsolePractise.Mapping_EF
             {
                 Student student = context.Students.Find(updatedEntityProps.Id);
                 context.Entry(student).CurrentValues.SetValues(updatedEntityProps);
-                context.Entry(student).State = EntityState.Modified;
                 int status = context.SaveChanges();
             }
         }
         
         void AddAdministrators(MyContext myContext)
         {
-            var admin = new Administrator { Id = 0, Name = "Chineke Tobenna" };
+            var admin = new Administrator { Id = 1, Name = "Chineke Tobenna" };
+            var admin2 = new Administrator { Id = 1, Name = "Odili Philip" };
             myContext.Administrators.Add(admin);
+            myContext.Administrators.Add(admin2);
         }
 
         void AddStudents(MyContext myContext)

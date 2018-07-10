@@ -5,8 +5,6 @@ namespace TobeConsolePractise
 {
     class Program
     {
-        static List<int> list;
-
         /// <summary>
         /// Main console app
         /// </summary>
@@ -39,7 +37,7 @@ namespace TobeConsolePractise
 
             Console.ReadKey();
         }
-    }
+    }  
 }
 
 
