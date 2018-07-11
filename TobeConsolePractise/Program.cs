@@ -37,7 +37,7 @@ namespace TobeConsolePractise
 
             Console.ReadKey();
         }
-    }  
+    }
 }
 
 
