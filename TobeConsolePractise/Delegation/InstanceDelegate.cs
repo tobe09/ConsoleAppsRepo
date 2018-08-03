@@ -1,16 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TobeConsolePractise
 {
-    public delegate void MessageOut(string str); //delegate declared outside the class, all delegates must be public
+    public delegate void MessageOut(string str); //delegate declared outside the class, all delegates must be public/internal
 
     class InstanceDelegate
     {
         public delegate void Message(string str);
+        public Message MessageFunc = (s) => { };
+
         private string sender;
         public Message message;  //delegate instance needed for instance methods
 

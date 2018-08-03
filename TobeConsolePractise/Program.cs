@@ -2,13 +2,14 @@
 
 namespace TobeConsolePractise
 {
+    /// <summary>
+    /// Main console app
+    /// </summary>
+    /// <param name="args"></param>
+    /// <devdoc>Really cool, aint it</devdoc>
     class Program
     {
-        /// <summary>
-        /// Main console app
-        /// </summary>
-        /// <param name="args"></param>
-        /// <devdoc>Really cool aint it</devdoc>
+
         public static void Main(string[] args)
         {
             //MergeSort.Run();
@@ -33,10 +34,11 @@ namespace TobeConsolePractise
             //Cousant.EncryptDecrypt.Run();
             //Mapping_EF.PractiseEf.Run();
             //new Mapping_EF.TestService().UpdateStudent_Did_Update();
-
+            //WebServices.IntegrationJavaSoap.Run();
+            //DataStructures.SinglyLinkedList.Run();
+                                         
             Console.ReadKey();
         }
     }
 }
-
 

@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:ns0="http://supernova.neptune.com/" targetNamespace="http://supernova.neptune.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:complexType name="Exception">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="message" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="accountBlockResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="channelCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="destinationInstitutionCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="narration" type="xsd:string" />
+      <xsd:element minOccurs="0" name="reasonCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="referenceCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="responseCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="sessionId" type="xsd:string" />
+      <xsd:element minOccurs="0" name="targetAccountName" type="xsd:string" />
+      <xsd:element minOccurs="0" name="targetAccountNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="targetBankVerificationNumber" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="amountBlockResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="amount" type="xsd:string" />
+      <xsd:element minOccurs="0" name="channelCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="destinationInstitutionCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="narration" type="xsd:string" />
+      <xsd:element minOccurs="0" name="reasonCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="referenceCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="responseCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="sessionId" type="xsd:string" />
+      <xsd:element minOccurs="0" name="targetAccountName" type="xsd:string" />
+      <xsd:element minOccurs="0" name="targetAccountNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="targetBankVerificationNumber" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="amountUnblockResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="amount" type="xsd:string" />
+      <xsd:element minOccurs="0" name="channelCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="destinationInstitutionCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="narration" type="xsd:string" />
+      <xsd:element minOccurs="0" name="reasonCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="referenceCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="responseCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="sessionId" type="xsd:string" />
+      <xsd:element minOccurs="0" name="targetAccountName" type="xsd:string" />
+      <xsd:element minOccurs="0" name="targetAccountNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="targetBankVerificationNumber" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="balanceEnquiryResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="authorizationCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="availableBalance" type="xsd:string" />
+      <xsd:element minOccurs="0" name="channelCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="destinationInstitutionCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="responseCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="sessionId" type="xsd:string" />
+      <xsd:element minOccurs="0" name="targetAccountName" type="xsd:string" />
+      <xsd:element minOccurs="0" name="targetAccountNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="targetBankVerificationNumber" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ftAdviceCreditResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="amount" type="xsd:string" />
+      <xsd:element minOccurs="0" name="beneficiaryAccountName" type="xsd:string" />
+      <xsd:element minOccurs="0" name="beneficiaryAccountNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="beneficiaryBankVerificationNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="beneficiaryKYCLevel" type="xsd:string" />
+      <xsd:element minOccurs="0" name="channelCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="destinationInstitutionCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="nameEnquiryRef" type="xsd:string" />
+      <xsd:element minOccurs="0" name="narration" type="xsd:string" />
+      <xsd:element minOccurs="0" name="originatorAccountName" type="xsd:string" />
+      <xsd:element minOccurs="0" name="originatorAccountNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="originatorBankVerificationNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="originatorKYCLevel" type="xsd:string" />
+      <xsd:element minOccurs="0" name="paymentReference" type="xsd:string" />
+      <xsd:element minOccurs="0" name="responseCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="sessionId" type="xsd:string" />
+      <xsd:element minOccurs="0" name="transactionLocation" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ftAdviceDebitResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="amount" type="xsd:string" />
+      <xsd:element minOccurs="0" name="beneficiaryAccountName" type="xsd:string" />
+      <xsd:element minOccurs="0" name="beneficiaryAccountNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="beneficiaryBankVerificationNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="beneficiaryKYCLevel" type="xsd:string" />
+      <xsd:element minOccurs="0" name="channelCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="debitAccountName" type="xsd:string" />
+      <xsd:element minOccurs="0" name="debitAccountNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="debitBankVerificationNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="debitKYCLevel" type="xsd:string" />
+      <xsd:element minOccurs="0" name="destinationInstitutionCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="mandateReferenceNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="nameEnquiryRef" type="xsd:string" />
+      <xsd:element minOccurs="0" name="narration" type="xsd:string" />
+      <xsd:element minOccurs="0" name="paymentReference" type="xsd:string" />
+      <xsd:element minOccurs="0" name="responseCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="sessionId" type="xsd:string" />
+      <xsd:element minOccurs="0" name="transactionFee" type="xsd:string" />
+      <xsd:element minOccurs="0" name="transactionLocation" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ftSingleCreditResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="amount" type="xsd:string" />
+      <xsd:element minOccurs="0" name="beneficiaryAccountName" type="xsd:string" />
+      <xsd:element minOccurs="0" name="beneficiaryAccountNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="beneficiaryBankVerificationNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="beneficiaryKYCLevel" type="xsd:string" />
+      <xsd:element minOccurs="0" name="channelCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="destinationInstitutionCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="nameEnquiryRef" type="xsd:string" />
+      <xsd:element minOccurs="0" name="narration" type="xsd:string" />
+      <xsd:element minOccurs="0" name="originatorAccountName" type="xsd:string" />
+      <xsd:element minOccurs="0" name="originatorAccountNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="originatorBankVerificationNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="originatorKYCLevel" type="xsd:string" />
+      <xsd:element minOccurs="0" name="paymentReference" type="xsd:string" />
+      <xsd:element minOccurs="0" name="responseCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="sessionId" type="xsd:string" />
+      <xsd:element minOccurs="0" name="transactionLocation" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ftSingleDebitResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="amount" type="xsd:string" />
+      <xsd:element minOccurs="0" name="beneficiaryAccountName" type="xsd:string" />
+      <xsd:element minOccurs="0" name="beneficiaryAccountNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="beneficiaryBankVerificationNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="beneficiaryKYCLevel" type="xsd:string" />
+      <xsd:element minOccurs="0" name="channelCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="debitAccountName" type="xsd:string" />
+      <xsd:element minOccurs="0" name="debitAccountNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="debitBankVerificationNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="debitKYCLevel" type="xsd:string" />
+      <xsd:element minOccurs="0" name="destinationInstitutionCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="mandateReference" type="xsd:string" />
+      <xsd:element minOccurs="0" name="nameEnquiryRef" type="xsd:string" />
+      <xsd:element minOccurs="0" name="narration" type="xsd:string" />
+      <xsd:element minOccurs="0" name="paymentReference" type="xsd:string" />
+      <xsd:element minOccurs="0" name="responseCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="sessionId" type="xsd:string" />
+      <xsd:element minOccurs="0" name="transactionFee" type="xsd:string" />
+      <xsd:element minOccurs="0" name="transactionLocation" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="financialInstitutionListResponses">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="batchNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="channelCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="destinationInstitutionCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="numberOfRecords" type="xsd:string" />
+      <xsd:element minOccurs="0" name="responseCode" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="mandateAdviceResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="amount" type="xsd:string" />
+      <xsd:element minOccurs="0" name="beneficiaryAccountName" type="xsd:string" />
+      <xsd:element minOccurs="0" name="beneficiaryAccountNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="beneficiaryBankVerificationNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="beneficiaryKYCLevel" type="xsd:string" />
+      <xsd:element minOccurs="0" name="channelCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="debitAccountName" type="xsd:string" />
+      <xsd:element minOccurs="0" name="debitAccountNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="debitBankVerificationNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="debitKYCLevel" type="xsd:string" />
+      <xsd:element minOccurs="0" name="destinationInstitutionCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="mandateReferenceNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="responseCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="sessionId" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="neSingleResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="accountName" type="xsd:string" />
+      <xsd:element minOccurs="0" name="accountNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="bankVerificationNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="channelCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="destinationInstitutionCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="kycLevel" type="xsd:string" />
+      <xsd:element minOccurs="0" name="responseCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="sessionId" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="tsQuerySingleResponses">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="channelCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="responseCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="sessionId" type="xsd:string" />
+      <xsd:element minOccurs="0" name="sourceInstitutionCode" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="accountBlockRequestData">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="channelCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="destinationInstitutionCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="narration" type="xsd:string" />
+      <xsd:element minOccurs="0" name="reasonCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="referenceCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="sessionId" type="xsd:string" />
+      <xsd:element minOccurs="0" name="targetAccountName" type="xsd:string" />
+      <xsd:element minOccurs="0" name="targetAccountNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="targetBankVerificationNumber" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="amountBlockRequestData">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="amount" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="channelCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="destinationInstitutionCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="narration" type="xsd:string" />
+      <xsd:element minOccurs="0" name="reasonCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="referenceCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="sessionId" type="xsd:string" />
+      <xsd:element minOccurs="0" name="targetAccountName" type="xsd:string" />
+      <xsd:element minOccurs="0" name="targetAccountNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="targetBankVerificationNumber" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="balanceEnquiryRequestData">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="authorizationCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="channelCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="destinationInstitutionCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="sessionId" type="xsd:string" />
+      <xsd:element minOccurs="0" name="targetAccountName" type="xsd:string" />
+      <xsd:element minOccurs="0" name="targetAccountNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="targetBankVerificationNumber" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="financialInstitutionListRequest">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="header" type="ns0:financialInstitutionListHeader" />
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="record" nillable="true" type="ns0:financialInstitutionListRecord" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="fundTransferAdviceCreditRequest">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="amount" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="beneficiaryAccountName" type="xsd:string" />
+      <xsd:element minOccurs="0" name="beneficiaryAccountNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="beneficiaryBankVerificationNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="beneficiaryKYCLevel" type="xsd:long" />
+      <xsd:element minOccurs="0" name="channelCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="destinationInstitutionCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="nameEnquiryRef" type="xsd:string" />
+      <xsd:element minOccurs="0" name="narration" type="xsd:string" />
+      <xsd:element minOccurs="0" name="originatorAccountName" type="xsd:string" />
+      <xsd:element minOccurs="0" name="originatorAccountNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="originatorBankVerificationNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="originatorKYCLevel" type="xsd:long" />
+      <xsd:element minOccurs="0" name="paymentReference" type="xsd:string" />
+      <xsd:element minOccurs="0" name="sessionId" type="xsd:string" />
+      <xsd:element minOccurs="0" name="transactionLocation" type="xsd:decimal" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="fundTransferAdviceDebitRequest">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="amount" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="beneficiaryAccountName" type="xsd:string" />
+      <xsd:element minOccurs="0" name="beneficiaryAccountNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="beneficiaryBankVerificationNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="beneficiaryKYCLevel" type="xsd:long" />
+      <xsd:element minOccurs="0" name="channelCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="debitAccountName" type="xsd:string" />
+      <xsd:element minOccurs="0" name="debitAccountNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="debitBankVerificationNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="debitKYCLevel" type="xsd:long" />
+      <xsd:element minOccurs="0" name="destinationInstitutionCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="mandateReferenceNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="nameEnquiryRef" type="xsd:string" />
+      <xsd:element minOccurs="0" name="narration" type="xsd:string" />
+      <xsd:element minOccurs="0" name="paymentReference" type="xsd:string" />
+      <xsd:element minOccurs="0" name="sessionId" type="xsd:string" />
+      <xsd:element minOccurs="0" name="transactionFee" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="transactionLocation" type="xsd:decimal" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="fundTransferSingleCreditRequest">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="amount" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="beneficiaryAccountName" type="xsd:string" />
+      <xsd:element minOccurs="0" name="beneficiaryAccountNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="beneficiaryBankVerificationNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="beneficiaryKYCLevel" type="xsd:long" />
+      <xsd:element minOccurs="0" name="channelCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="destinationInstitutionCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="nameEnquiryRef" type="xsd:string" />
+      <xsd:element minOccurs="0" name="narration" type="xsd:string" />
+      <xsd:element minOccurs="0" name="originatorAccountName" type="xsd:string" />
+      <xsd:element minOccurs="0" name="originatorAccountNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="originatorBankVerificationNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="originatorKYCLevel" type="xsd:long" />
+      <xsd:element minOccurs="0" name="paymentReference" type="xsd:string" />
+      <xsd:element minOccurs="0" name="sessionId" type="xsd:string" />
+      <xsd:element minOccurs="0" name="transactionLocation" type="xsd:decimal" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="fundTransferSingleDebitRequest">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="amount" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="beneficiaryAccountName" type="xsd:string" />
+      <xsd:element minOccurs="0" name="beneficiaryAccountNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="beneficiaryBankVerificationNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="beneficiaryKYCLevel" type="xsd:long" />
+      <xsd:element minOccurs="0" name="channelCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="debitAccountName" type="xsd:string" />
+      <xsd:element minOccurs="0" name="debitAccountNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="debitBankVerificationNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="debitKYCLevel" type="xsd:long" />
+      <xsd:element minOccurs="0" name="destinationInstitutionCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="mandateReferenceNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="nameEnquiryRef" type="xsd:string" />
+      <xsd:element minOccurs="0" name="narration" type="xsd:string" />
+      <xsd:element minOccurs="0" name="paymentReference" type="xsd:string" />
+      <xsd:element minOccurs="0" name="sessionId" type="xsd:string" />
+      <xsd:element minOccurs="0" name="transactionFee" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="transactionLocation" type="xsd:decimal" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="mandateAdviceRequestData">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="amount" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="beneficiaryAccountName" type="xsd:string" />
+      <xsd:element minOccurs="0" name="beneficiaryAccountNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="beneficiaryBankVerificationNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="beneficiaryKYCLevel" type="xsd:string" />
+      <xsd:element minOccurs="0" name="channelCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="debitAccountName" type="xsd:string" />
+      <xsd:element minOccurs="0" name="debitAccountNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="debitBankVerificationNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="debitKYCLevel" type="xsd:string" />
+      <xsd:element minOccurs="0" name="destinationInstitutionCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="mandateReferenceNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="sessionId" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="nameInquiryRequestData">
+    <xsd:complexContent mixed="false">
+      <xsd:extension base="ns0:xapiRequestBaseObject">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="accountNumber" type="xsd:string" />
+          <xsd:element minOccurs="0" name="bicCode" type="xsd:string" />
+          <xsd:element minOccurs="0" name="destinationInstitutionCode" type="xsd:string" />
+          <xsd:element minOccurs="0" name="sessionId" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="tsQuerySingleRequest">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="channelCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="sessionId" type="xsd:string" />
+      <xsd:element minOccurs="0" name="sourceInstitutionCode" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="xapiRequestBaseObject">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="XAPIServiceCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="agencyFee" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="agencyFeeAcctNo" type="xsd:string" />
+      <xsd:element minOccurs="0" name="agentAccountNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="agentCrncyCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="agentCrncyId" type="xsd:long" />
+      <xsd:element minOccurs="0" name="agentTxnDesc" type="xsd:string" />
+      <xsd:element minOccurs="0" name="amount" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="cardNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="channelCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="channelId" type="xsd:long" />
+      <xsd:element minOccurs="0" name="channelRefNo" type="xsd:string" />
+      <xsd:element minOccurs="0" name="currBUId" type="xsd:long" />
+      <xsd:element minOccurs="0" name="customerFeeAcctNo" type="xsd:string" />
+      <xsd:element minOccurs="0" name="deviceCd" type="xsd:string" />
+      <xsd:element minOccurs="0" name="globalCharges" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="internalChannelCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="localCcyId" type="xsd:long" />
+      <xsd:element minOccurs="0" name="originatorUserId" type="xsd:long" />
+      <xsd:element minOccurs="0" name="reference" type="xsd:string" />
+      <xsd:element minOccurs="0" name="requestDetails" type="xsd:anyType" />
+      <xsd:element minOccurs="0" name="response" type="xsd:anyType" />
+      <xsd:element minOccurs="0" name="reversalIndicator" type="xsd:string" />
+      <xsd:element minOccurs="0" name="switchId" type="xsd:string" />
+      <xsd:element minOccurs="0" name="sysUserId" type="xsd:long" />
+      <xsd:element minOccurs="0" name="terminalNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="transmissionTime" type="xsd:long" />
+      <xsd:element minOccurs="0" name="userAccessCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="userBusinessRoleId" type="xsd:long" />
+      <xsd:element minOccurs="0" name="userId" type="xsd:long" />
+      <xsd:element minOccurs="0" name="userLoginId" type="xsd:string" />
+      <xsd:element minOccurs="0" name="userPassword" type="xsd:string" />
+      <xsd:element minOccurs="0" name="userRoleId" type="xsd:long" />
+      <xsd:element name="validXapiRequest" type="xsd:boolean" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="financialInstitutionListHeader">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="batchNumber" type="xsd:string" />
+      <xsd:element minOccurs="0" name="channelCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="destinationInstitutionCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="numberOfRecords" type="xsd:string" />
+      <xsd:element minOccurs="0" name="sessionId" type="xsd:string" />
+      <xsd:element minOccurs="0" name="transactionLocation" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="financialInstitutionListRecord">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="category" type="xsd:string" />
+      <xsd:element minOccurs="0" name="institutionCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="institutionName" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="Exception" type="ns0:Exception" />
+  <xsd:element name="accountBlockResponse" type="ns0:accountBlockResponse" />
+  <xsd:element name="amountBlockResponse" type="ns0:amountBlockResponse" />
+  <xsd:element name="amountUnblockResponse" type="ns0:amountUnblockResponse" />
+  <xsd:element name="balanceEnquiryResponse" type="ns0:balanceEnquiryResponse" />
+  <xsd:element name="ftAdviceCreditResponse" type="ns0:ftAdviceCreditResponse" />
+  <xsd:element name="ftAdviceDebitResponse" type="ns0:ftAdviceDebitResponse" />
+  <xsd:element name="ftSingleCreditResponse" type="ns0:ftSingleCreditResponse" />
+  <xsd:element name="ftSingleDebitResponse" type="ns0:ftSingleDebitResponse" />
+  <xsd:element name="financialInstitutionListResponses" type="ns0:financialInstitutionListResponses" />
+  <xsd:element name="mandateAdviceResponse" type="ns0:mandateAdviceResponse" />
+  <xsd:element name="neSingleResponse" type="ns0:neSingleResponse" />
+  <xsd:element name="tsQuerySingleResponses" type="ns0:tsQuerySingleResponses" />
+</xsd:schema>

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://supernova.neptune.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="IntegrationSoapImplService" targetNamespace="http://supernova.neptune.com/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/integration/integration?xsd=1" namespace="http://supernova.neptune.com/" />
+    </xsd:schema>
+  </types>
+  <message name="nameInquirySubmit">
+    <part name="arg0" type="tns:nameInquiryRequestData" />
+  </message>
+  <message name="nameInquirySubmitResponse">
+    <part name="return" type="tns:neSingleResponse" />
+  </message>
+  <message name="Exception">
+    <part name="fault" element="tns:Exception" />
+  </message>
+  <message name="balanceEnquirySubmit">
+    <part name="arg0" type="tns:balanceEnquiryRequestData" />
+  </message>
+  <message name="balanceEnquirySubmitResponse">
+    <part name="return" type="tns:balanceEnquiryResponse" />
+  </message>
+  <message name="accountBlockSubmit">
+    <part name="arg0" type="tns:accountBlockRequestData" />
+  </message>
+  <message name="accountBlockSubmitResponse">
+    <part name="return" type="tns:accountBlockResponse" />
+  </message>
+  <message name="accountUnblockSubmit">
+    <part name="arg0" type="tns:accountBlockRequestData" />
+  </message>
+  <message name="accountUnblockSubmitResponse">
+    <part name="return" type="tns:accountBlockResponse" />
+  </message>
+  <message name="amountBlockSubmit">
+    <part name="arg0" type="tns:amountBlockRequestData" />
+  </message>
+  <message name="amountBlockSubmitResponse">
+    <part name="return" type="tns:amountBlockResponse" />
+  </message>
+  <message name="fundTransferDdSubmit">
+    <part name="arg0" type="tns:fundTransferSingleDebitRequest" />
+  </message>
+  <message name="fundTransferDdSubmitResponse">
+    <part name="return" type="tns:ftSingleDebitResponse" />
+  </message>
+  <message name="fundtransferAdviceDdSubmit">
+    <part name="arg0" type="tns:fundTransferAdviceDebitRequest" />
+  </message>
+  <message name="fundtransferAdviceDdSubmitResponse">
+    <part name="return" type="tns:ftAdviceDebitResponse" />
+  </message>
+  <message name="transactionStatusSubmit">
+    <part name="arg0" type="tns:tsQuerySingleRequest" />
+  </message>
+  <message name="transactionStatusSubmitResponse">
+    <part name="return" type="tns:tsQuerySingleResponses" />
+  </message>
+  <message name="amountUnblockSubmit">
+    <part name="arg0" type="tns:amountBlockRequestData" />
+  </message>
+  <message name="amountUnblockSubmitResponse">
+    <part name="return" type="tns:amountUnblockResponse" />
+  </message>
+  <message name="mandateAdviceSubmit">
+    <part name="arg0" type="tns:mandateAdviceRequestData" />
+  </message>
+  <message name="mandateAdviceSubmitResponse">
+    <part name="return" type="tns:mandateAdviceResponse" />
+  </message>
+  <message name="fundTransferAdviceDcSubmit">
+    <part name="arg0" type="tns:fundTransferAdviceCreditRequest" />
+  </message>
+  <message name="fundTransferAdviceDcSubmitResponse">
+    <part name="return" type="tns:ftAdviceCreditResponse" />
+  </message>
+  <message name="fundTransferDcSubmit">
+    <part name="arg0" type="tns:fundTransferSingleCreditRequest" />
+  </message>
+  <message name="fundTransferDcSubmitResponse">
+    <part name="return" type="tns:ftSingleCreditResponse" />
+  </message>
+  <message name="financialInstListSubmit">
+    <part name="arg0" type="tns:financialInstitutionListRequest" />
+  </message>
+  <message name="financialInstListSubmitResponse">
+    <part name="return" type="tns:financialInstitutionListResponses" />
+  </message>
+  <portType name="IntegrationSoap">
+    <operation name="nameInquirySubmit">
+      <input wsam:Action="http://supernova.neptune.com/IntegrationSoap/nameInquirySubmitRequest" message="tns:nameInquirySubmit" />
+      <output wsam:Action="http://supernova.neptune.com/IntegrationSoap/nameInquirySubmitResponse" message="tns:nameInquirySubmitResponse" />
+      <fault wsam:Action="http://supernova.neptune.com/IntegrationSoap/nameInquirySubmit/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="balanceEnquirySubmit">
+      <input wsam:Action="http://supernova.neptune.com/IntegrationSoap/balanceEnquirySubmitRequest" message="tns:balanceEnquirySubmit" />
+      <output wsam:Action="http://supernova.neptune.com/IntegrationSoap/balanceEnquirySubmitResponse" message="tns:balanceEnquirySubmitResponse" />
+      <fault wsam:Action="http://supernova.neptune.com/IntegrationSoap/balanceEnquirySubmit/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="accountBlockSubmit">
+      <input wsam:Action="http://supernova.neptune.com/IntegrationSoap/accountBlockSubmitRequest" message="tns:accountBlockSubmit" />
+      <output wsam:Action="http://supernova.neptune.com/IntegrationSoap/accountBlockSubmitResponse" message="tns:accountBlockSubmitResponse" />
+      <fault wsam:Action="http://supernova.neptune.com/IntegrationSoap/accountBlockSubmit/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="accountUnblockSubmit">
+      <input wsam:Action="http://supernova.neptune.com/IntegrationSoap/accountUnblockSubmitRequest" message="tns:accountUnblockSubmit" />
+      <output wsam:Action="http://supernova.neptune.com/IntegrationSoap/accountUnblockSubmitResponse" message="tns:accountUnblockSubmitResponse" />
+      <fault wsam:Action="http://supernova.neptune.com/IntegrationSoap/accountUnblockSubmit/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="amountBlockSubmit">
+      <input wsam:Action="http://supernova.neptune.com/IntegrationSoap/amountBlockSubmitRequest" message="tns:amountBlockSubmit" />
+      <output wsam:Action="http://supernova.neptune.com/IntegrationSoap/amountBlockSubmitResponse" message="tns:amountBlockSubmitResponse" />
+      <fault wsam:Action="http://supernova.neptune.com/IntegrationSoap/amountBlockSubmit/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="fundTransferDdSubmit">
+      <input wsam:Action="http://supernova.neptune.com/IntegrationSoap/fundTransferDdSubmitRequest" message="tns:fundTransferDdSubmit" />
+      <output wsam:Action="http://supernova.neptune.com/IntegrationSoap/fundTransferDdSubmitResponse" message="tns:fundTransferDdSubmitResponse" />
+      <fault wsam:Action="http://supernova.neptune.com/IntegrationSoap/fundTransferDdSubmit/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="fundtransferAdviceDdSubmit">
+      <input wsam:Action="http://supernova.neptune.com/IntegrationSoap/fundtransferAdviceDdSubmitRequest" message="tns:fundtransferAdviceDdSubmit" />
+      <output wsam:Action="http://supernova.neptune.com/IntegrationSoap/fundtransferAdviceDdSubmitResponse" message="tns:fundtransferAdviceDdSubmitResponse" />
+      <fault wsam:Action="http://supernova.neptune.com/IntegrationSoap/fundtransferAdviceDdSubmit/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="transactionStatusSubmit">
+      <input wsam:Action="http://supernova.neptune.com/IntegrationSoap/transactionStatusSubmitRequest" message="tns:transactionStatusSubmit" />
+      <output wsam:Action="http://supernova.neptune.com/IntegrationSoap/transactionStatusSubmitResponse" message="tns:transactionStatusSubmitResponse" />
+      <fault wsam:Action="http://supernova.neptune.com/IntegrationSoap/transactionStatusSubmit/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="amountUnblockSubmit">
+      <input wsam:Action="http://supernova.neptune.com/IntegrationSoap/amountUnblockSubmitRequest" message="tns:amountUnblockSubmit" />
+      <output wsam:Action="http://supernova.neptune.com/IntegrationSoap/amountUnblockSubmitResponse" message="tns:amountUnblockSubmitResponse" />
+      <fault wsam:Action="http://supernova.neptune.com/IntegrationSoap/amountUnblockSubmit/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="mandateAdviceSubmit">
+      <input wsam:Action="http://supernova.neptune.com/IntegrationSoap/mandateAdviceSubmitRequest" message="tns:mandateAdviceSubmit" />
+      <output wsam:Action="http://supernova.neptune.com/IntegrationSoap/mandateAdviceSubmitResponse" message="tns:mandateAdviceSubmitResponse" />
+      <fault wsam:Action="http://supernova.neptune.com/IntegrationSoap/mandateAdviceSubmit/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="fundTransferAdviceDcSubmit">
+      <input wsam:Action="http://supernova.neptune.com/IntegrationSoap/fundTransferAdviceDcSubmitRequest" message="tns:fundTransferAdviceDcSubmit" />
+      <output wsam:Action="http://supernova.neptune.com/IntegrationSoap/fundTransferAdviceDcSubmitResponse" message="tns:fundTransferAdviceDcSubmitResponse" />
+      <fault wsam:Action="http://supernova.neptune.com/IntegrationSoap/fundTransferAdviceDcSubmit/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="fundTransferDcSubmit">
+      <input wsam:Action="http://supernova.neptune.com/IntegrationSoap/fundTransferDcSubmitRequest" message="tns:fundTransferDcSubmit" />
+      <output wsam:Action="http://supernova.neptune.com/IntegrationSoap/fundTransferDcSubmitResponse" message="tns:fundTransferDcSubmitResponse" />
+      <fault wsam:Action="http://supernova.neptune.com/IntegrationSoap/fundTransferDcSubmit/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="financialInstListSubmit">
+      <input wsam:Action="http://supernova.neptune.com/IntegrationSoap/financialInstListSubmitRequest" message="tns:financialInstListSubmit" />
+      <output wsam:Action="http://supernova.neptune.com/IntegrationSoap/financialInstListSubmitResponse" message="tns:financialInstListSubmitResponse" />
+      <fault wsam:Action="http://supernova.neptune.com/IntegrationSoap/financialInstListSubmit/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+  </portType>
+  <binding name="IntegrationSoapImplPortBinding" type="tns:IntegrationSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <operation name="nameInquirySubmit">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://supernova.neptune.com/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://supernova.neptune.com/" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="balanceEnquirySubmit">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://supernova.neptune.com/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://supernova.neptune.com/" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="accountBlockSubmit">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://supernova.neptune.com/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://supernova.neptune.com/" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="accountUnblockSubmit">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://supernova.neptune.com/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://supernova.neptune.com/" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="amountBlockSubmit">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://supernova.neptune.com/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://supernova.neptune.com/" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="fundTransferDdSubmit">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://supernova.neptune.com/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://supernova.neptune.com/" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="fundtransferAdviceDdSubmit">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://supernova.neptune.com/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://supernova.neptune.com/" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="transactionStatusSubmit">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://supernova.neptune.com/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://supernova.neptune.com/" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="amountUnblockSubmit">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://supernova.neptune.com/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://supernova.neptune.com/" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="mandateAdviceSubmit">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://supernova.neptune.com/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://supernova.neptune.com/" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="fundTransferAdviceDcSubmit">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://supernova.neptune.com/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://supernova.neptune.com/" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="fundTransferDcSubmit">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://supernova.neptune.com/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://supernova.neptune.com/" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="financialInstListSubmit">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://supernova.neptune.com/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://supernova.neptune.com/" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+  </binding>
+  <service name="IntegrationSoapImplService">
+    <port name="IntegrationSoapImplPort" binding="tns:IntegrationSoapImplPortBinding">
+      <soap:address location="http://localhost:8080/integration/integration" />
+    </port>
+  </service>
+</definitions>

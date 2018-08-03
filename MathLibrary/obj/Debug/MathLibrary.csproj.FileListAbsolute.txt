@@ -9,3 +9,4 @@ C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\MathL
 C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\MathLibrary\obj\Debug\MathLibrary.csprojResolveAssemblyReference.cache
 C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\MathLibrary\obj\Debug\MathLibrary.dll
 C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\MathLibrary\obj\Debug\MathLibrary.pdb
+C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\MathLibrary\bin\Debug\MathLibrary.dll.config

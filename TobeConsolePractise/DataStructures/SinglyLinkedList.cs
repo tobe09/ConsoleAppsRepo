@@ -34,6 +34,9 @@ namespace TobeConsolePractise.DataStructures
             list.Traverse(DisplayCube);
             Console.WriteLine();
             list.Display();
+
+            list.Reverse();
+            list.Display();
         }
 
         public static void DisplayCube(Node node)
@@ -150,6 +153,25 @@ namespace TobeConsolePractise.DataStructures
                 action(temp);
                 temp = temp.Next;
             }
+        }
+
+        public void Reverse()
+        {
+            Node current = Head;
+            Node prev = null;
+            Node next;
+
+            Tail = new Node(Head.Data);
+
+            while (current != null)
+            {
+                next = current.Next;
+                current.Next = prev;
+                prev = current;
+                current = next;
+            }
+
+            Head = prev;
         }
 
         public void Display()

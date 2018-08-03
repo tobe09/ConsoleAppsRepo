@@ -72,6 +72,10 @@
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Client, Version=2.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.Client.2.3.0\lib\net45\Microsoft.AspNet.SignalR.Client.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Moq, Version=4.8.0.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
       <HintPath>..\packages\Moq.4.8.3\lib\net45\Moq.dll</HintPath>
       <Private>True</Private>
@@ -115,7 +119,13 @@
     <Compile Include="Mapping_EF\Entities.cs" />
     <Compile Include="Mapping_EF\PractiseEf.cs" />
     <Compile Include="Mapping_EF\TestService.cs" />
+    <Compile Include="Service References\IntegrationService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Variance\VarianceTest.cs" />
+    <Compile Include="WebServices\IntegrationJavaSoap.cs" />
     <Content Include="Asynchronous Programming\AsyncService.asmx" />
     <Compile Include="Asynchronous Programming\TaskTest.cs" />
     <Compile Include="Boxing\Boxing.cs" />
@@ -265,6 +275,12 @@
     <Compile Include="StackOverflow\StackCheck.cs" />
     <Content Include="MyReferences\MathLibrary.dll" />
     <Content Include="MyReferences\MathLibrary.XML" />
+    <None Include="Service References\IntegrationService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\IntegrationService\configuration.svcinfo" />
+    <None Include="Service References\IntegrationService\configuration91.svcinfo" />
     <None Include="packages.config" />
     <None Include="Service References\ConsoleWeather\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
@@ -275,6 +291,46 @@
     <None Include="Service References\ConsoleWeather\asyncweather.disco" />
     <None Include="Service References\ConsoleWeather\asyncweather.wsdl" />
     <None Include="Service References\ConsoleWeather\TobeConsolePractise.ConsoleWeather.GetWeatherResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\IntegrationService\integration.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\IntegrationService\IntegrationSoapImplService.wsdl" />
+    <None Include="Service References\IntegrationService\TobeConsolePractise.IntegrationService.accountBlockResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\IntegrationService\TobeConsolePractise.IntegrationService.amountBlockResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\IntegrationService\TobeConsolePractise.IntegrationService.amountUnblockResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\IntegrationService\TobeConsolePractise.IntegrationService.balanceEnquiryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\IntegrationService\TobeConsolePractise.IntegrationService.financialInstitutionListResponses.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\IntegrationService\TobeConsolePractise.IntegrationService.ftAdviceCreditResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\IntegrationService\TobeConsolePractise.IntegrationService.ftAdviceDebitResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\IntegrationService\TobeConsolePractise.IntegrationService.ftSingleCreditResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\IntegrationService\TobeConsolePractise.IntegrationService.ftSingleDebitResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\IntegrationService\TobeConsolePractise.IntegrationService.mandateAdviceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\IntegrationService\TobeConsolePractise.IntegrationService.neSingleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\IntegrationService\TobeConsolePractise.IntegrationService.tsQuerySingleResponses.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
   </ItemGroup>
@@ -301,6 +357,7 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\ConsoleWeather\" />
+    <WCFMetadataStorage Include="Service References\IntegrationService\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="HackerRank\Databases\" />
