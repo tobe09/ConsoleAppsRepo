@@ -27,3 +27,14 @@ C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\VbCon
 C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\VbConsoleApp\obj\Debug\VbConsoleApp.exe
 C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\VbConsoleApp\obj\Debug\VbConsoleApp.xml
 C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\VbConsoleApp\obj\Debug\VbConsoleApp.pdb
+C:\Users\FMV01\source\repos\ConsoleAppsRepo\VbConsoleApp\bin\Debug\VbConsoleApp.exe.config
+C:\Users\FMV01\source\repos\ConsoleAppsRepo\VbConsoleApp\bin\Debug\VbConsoleApp.exe
+C:\Users\FMV01\source\repos\ConsoleAppsRepo\VbConsoleApp\bin\Debug\VbConsoleApp.pdb
+C:\Users\FMV01\source\repos\ConsoleAppsRepo\VbConsoleApp\bin\Debug\VbConsoleApp.xml
+C:\Users\FMV01\source\repos\ConsoleAppsRepo\VbConsoleApp\obj\Debug\VbConsoleApp.vbprojAssemblyReference.cache
+C:\Users\FMV01\source\repos\ConsoleAppsRepo\VbConsoleApp\obj\Debug\VbConsoleApp.Resources.resources
+C:\Users\FMV01\source\repos\ConsoleAppsRepo\VbConsoleApp\obj\Debug\VbConsoleApp.vbproj.GenerateResource.cache
+C:\Users\FMV01\source\repos\ConsoleAppsRepo\VbConsoleApp\obj\Debug\VbConsoleApp.vbproj.CoreCompileInputs.cache
+C:\Users\FMV01\source\repos\ConsoleAppsRepo\VbConsoleApp\obj\Debug\VbConsoleApp.exe
+C:\Users\FMV01\source\repos\ConsoleAppsRepo\VbConsoleApp\obj\Debug\VbConsoleApp.xml
+C:\Users\FMV01\source\repos\ConsoleAppsRepo\VbConsoleApp\obj\Debug\VbConsoleApp.pdb

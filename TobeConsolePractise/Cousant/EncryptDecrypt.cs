@@ -15,11 +15,11 @@ namespace TobeConsolePractise.Cousant
                 string value = Console.ReadLine();
                 Console.WriteLine();
 
-                string dec = Encrypt(value);
-                Console.WriteLine("Encrypted: " + dec);
+                string encryptedText = Encrypt(value);
+                Console.WriteLine("Encrypted: " + encryptedText);
 
-                string clr = Decrypt(dec);
-                Console.WriteLine("Decrypted: " + clr);
+                string clearText = Decrypt(encryptedText);
+                Console.WriteLine("Decrypted: " + clearText);
                 Console.WriteLine();
 
                 Console.Write("Do you wish to continue (y/n): ");

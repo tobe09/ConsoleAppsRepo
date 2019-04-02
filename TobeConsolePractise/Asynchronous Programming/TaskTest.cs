@@ -68,7 +68,7 @@ namespace TobeConsolePractise
             return str;
         }
 
-        public static void Run()
+        public static Task Run()
         {
             new TaskTest().GetInfo();
 
@@ -77,13 +77,13 @@ namespace TobeConsolePractise
             strTaskSelf.Start();
             var a = strTaskSelf.Result;
 
-            strTask().Start();
-            strTaskSelf.ContinueWith(res => {
-                string b = res.Result;
-            });
-
             asyncTask().ContinueWith(res => {
                 var b = res.Result;
+            });
+
+            strTask().Start();
+            return strTaskSelf.ContinueWith(res => {
+                Console.WriteLine(res.Result);
             });
         }
     }
