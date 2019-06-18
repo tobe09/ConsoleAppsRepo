@@ -69,9 +69,7 @@ C:\Users\FMV01\source\repos\ConsoleAppsRepo\TobeConsolePractise\bin\Debug\Refere
 C:\Users\FMV01\source\repos\ConsoleAppsRepo\TobeConsolePractise\bin\Debug\System.Threading.Tasks.Extensions.dll
 C:\Users\FMV01\source\repos\ConsoleAppsRepo\TobeConsolePractise\bin\Debug\System.ValueTuple.dll
 C:\Users\FMV01\source\repos\ConsoleAppsRepo\TobeConsolePractise\bin\Debug\VbConsoleApp.exe
-C:\Users\FMV01\source\repos\ConsoleAppsRepo\TobeConsolePractise\bin\Debug\MathLibrary.pdb
 C:\Users\FMV01\source\repos\ConsoleAppsRepo\TobeConsolePractise\bin\Debug\MathLibrary.xml
-C:\Users\FMV01\source\repos\ConsoleAppsRepo\TobeConsolePractise\bin\Debug\MathLibrary.dll.config
 C:\Users\FMV01\source\repos\ConsoleAppsRepo\TobeConsolePractise\bin\Debug\RefereeConsoleApp.pdb
 C:\Users\FMV01\source\repos\ConsoleAppsRepo\TobeConsolePractise\bin\Debug\RefereeConsoleApp.exe.config
 C:\Users\FMV01\source\repos\ConsoleAppsRepo\TobeConsolePractise\bin\Debug\VbConsoleApp.pdb
@@ -98,3 +96,5 @@ C:\Users\FMV01\source\repos\ConsoleAppsRepo\TobeConsolePractise\bin\Debug\System
 C:\Users\FMV01\source\repos\ConsoleAppsRepo\TobeConsolePractise\obj\Debug\TobeConsolePractise.csproj.CopyComplete
 C:\Users\FMV01\source\repos\ConsoleAppsRepo\TobeConsolePractise\obj\Debug\TobeConsolePractise.exe
 C:\Users\FMV01\source\repos\ConsoleAppsRepo\TobeConsolePractise\obj\Debug\TobeConsolePractise.pdb
+C:\Users\FMV01\source\repos\ConsoleAppsRepo\TobeConsolePractise\bin\Debug\MathLibrary.pdb
+C:\Users\FMV01\source\repos\ConsoleAppsRepo\TobeConsolePractise\bin\Debug\MathLibrary.dll.config

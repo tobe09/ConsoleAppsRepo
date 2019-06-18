@@ -1,8 +1,8 @@
-﻿using System;
-using Autofac;
+﻿using Autofac;
 using Autofac.Extras.CommonServiceLocator;
 using CommonServiceLocator;
 using Quartz.Spi;
+using System;
 using TobeConsolePractise.QuartzJob;
 
 namespace TobeConsolePractise
@@ -14,6 +14,15 @@ namespace TobeConsolePractise
     /// <devdoc>Really cool, aint it</devdoc>
     class Program
     {
+        public static void Main(string[] args)
+        {
+            using (var scope = Container)
+            {
+                scope.Resolve<Application>().Run();
+                Console.ReadKey();
+            }
+        }
+        
         private static IContainer _container;
         public static IContainer Container
         {
@@ -28,16 +37,6 @@ namespace TobeConsolePractise
                 return _container;
             }
         }
-
-        public static void Main(string[] args)
-        {
-            using (var scope = Container)
-            {
-                scope.Resolve<Application>().Run();
-                Console.ReadKey();
-            }
-        }
-
         public static IContainer GetContainer()
         {
             var builder = new ContainerBuilder();
@@ -92,7 +91,7 @@ namespace TobeConsolePractise
             //TaskTest.Run().Wait();
             //context.Resolve<MyScheduler>().Run().Wait();
             //HoneyPot.Challenges.Run();
-            //EMail.TestSmtpMailServer.Run();
-        }        
+            //EMail.TestSmtpMailServer.Run();   lstIP.Items.Clear();
+        }
     }
 }

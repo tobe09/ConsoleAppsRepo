@@ -67,6 +67,16 @@ namespace MathLibrary
         {
             return a - b;
         }
+
+        /// <summary>
+        /// Generates the protected subtraction of 2 numbers, lol
+        /// </summary>
+        /// <param name="a"></param>
+        /// <returns></returns>
+        protected double ProtectedSubstract(double a, double b)
+        {
+            return a - b;
+        }
     }
 
     class OuterClass

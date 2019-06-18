@@ -18,7 +18,7 @@ C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\Refer
 C:\Users\FMV01\source\repos\ConsoleAppsRepo\RefereeConsoleApp\bin\Debug\RefereeConsoleApp.exe.config
 C:\Users\FMV01\source\repos\ConsoleAppsRepo\RefereeConsoleApp\bin\Debug\RefereeConsoleApp.exe
 C:\Users\FMV01\source\repos\ConsoleAppsRepo\RefereeConsoleApp\bin\Debug\RefereeConsoleApp.pdb
-C:\Users\FMV01\source\repos\ConsoleAppsRepo\RefereeConsoleApp\obj\Debug\RefereeConsoleApp.csprojAssemblyReference.cache
 C:\Users\FMV01\source\repos\ConsoleAppsRepo\RefereeConsoleApp\obj\Debug\RefereeConsoleApp.csproj.CoreCompileInputs.cache
 C:\Users\FMV01\source\repos\ConsoleAppsRepo\RefereeConsoleApp\obj\Debug\RefereeConsoleApp.exe
 C:\Users\FMV01\source\repos\ConsoleAppsRepo\RefereeConsoleApp\obj\Debug\RefereeConsoleApp.pdb
+C:\Users\FMV01\source\repos\ConsoleAppsRepo\RefereeConsoleApp\obj\Debug\RefereeConsoleApp.csprojAssemblyReference.cache

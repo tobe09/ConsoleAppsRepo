@@ -47,5 +47,12 @@
             <param name="a"></param>
             <returns></returns>
         </member>
+        <member name="M:MathLibrary.Arithmetic.ProtectedSubstract(System.Double,System.Double)">
+            <summary>
+            Generates the protected subtraction of 2 numbers, lol
+            </summary>
+            <param name="a"></param>
+            <returns></returns>
+        </member>
     </members>
 </doc>

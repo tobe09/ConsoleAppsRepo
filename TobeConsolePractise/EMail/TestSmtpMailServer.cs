@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Net;
 using System.Net.Security;
 using System.Net.Sockets;
 
@@ -8,6 +9,11 @@ namespace TobeConsolePractise.EMail
     class TestSmtpMailServer
     {
         public static void Run()
+        {
+            CheckSmtpMailServer();
+        }
+
+        private static void CheckSmtpMailServer()
         {
             using (var client = new TcpClient())
             {
@@ -30,6 +36,33 @@ namespace TobeConsolePractise.EMail
                         // GMail responds with: 220 mx.google.com ESMTP
                     }
                 }
+            }
+        }
+
+        private static void HostInformation()
+        {
+            try
+            {
+                // IP Address resolution to Host Name
+                IPHostEntry ip = Dns.GetHostEntry("31.13.90.36");  //("110.000.073.011");
+                string hostName = ip.HostName;
+                Console.WriteLine("Host Name: " + hostName + "\n");
+
+                // Host Name resolution to IP Address
+                IPHostEntry host = Dns.GetHostEntry("facebook.com");
+                IPAddress[] ipaddr = host.AddressList;
+                Console.WriteLine("Number of Addresses: " + ipaddr.Length + "\n");
+                foreach (IPAddress addr in ipaddr)
+                    Console.WriteLine(addr);
+            }
+            // Catch unknown host names
+            catch (SocketException ex)
+            {
+                Console.WriteLine("Socket Error: " + ex.Message + "\n");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("\nError: " + ex.Message + "\n");
             }
         }
     }
