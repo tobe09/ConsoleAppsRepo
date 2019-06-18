@@ -14,8 +14,6 @@ namespace TobeConsolePractise
     /// <devdoc>Really cool, aint it</devdoc>
     class Program
     {
-        //master 1
-
         public static void Main(string[] args)
         {
             using (var scope = Container)
