@@ -15,13 +15,6 @@ namespace TobeConsolePractise
     class Program
     {
         //master 1
-        //master 2
-
-
-
-
-
-
 
         public static void Main(string[] args)
         {
