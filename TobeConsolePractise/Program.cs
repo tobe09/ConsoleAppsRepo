@@ -39,7 +39,6 @@ namespace TobeConsolePractise
         }
 
         //tobenna 3
-        //MASTER 1
 
         public static IContainer GetContainer()
         {
@@ -55,7 +54,6 @@ namespace TobeConsolePractise
             return builder.Build();
         }
 
-        //MASTER 2
         //tobenna 2
     }
 
