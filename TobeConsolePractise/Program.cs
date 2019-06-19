@@ -38,8 +38,6 @@ namespace TobeConsolePractise
             }
         }
 
-        //tobenna 3
-
         public static IContainer GetContainer()
         {
             var builder = new ContainerBuilder();
@@ -53,8 +51,6 @@ namespace TobeConsolePractise
 
             return builder.Build();
         }
-
-        //tobenna 2
     }
 
     class Application
