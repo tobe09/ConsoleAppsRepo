@@ -14,6 +14,7 @@ namespace TobeConsolePractise
     /// <devdoc>Really cool, aint it</devdoc>
     class Program
     {
+        //MASTER
         public static void Main(string[] args)
         {
             using (var scope = Container)
@@ -40,7 +41,7 @@ namespace TobeConsolePractise
 
         //tobenna 4
 
-        public static IContainer GetContainer()
+         public static IContainer GetContainer()
         {
             var builder = new ContainerBuilder();
             builder.RegisterType<ConcreteHold>().As<Hold>();
