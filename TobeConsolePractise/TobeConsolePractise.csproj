@@ -148,7 +148,8 @@
     <Compile Include="QuartzJob\MyJobFactory.cs" />
     <Compile Include="QuartzJob\MyMailJob.cs" />
     <Compile Include="QuartzJob\MyScheduler.cs" />
-    <Compile Include="Scheduling\Job.cs" />
+    <Compile Include="Asynchronous Programming\Scheduling\Job.cs" />
+    <Compile Include="ReflectionPointerThreading\ThreadTiming.cs" />
     <Compile Include="Service References\IntegrationService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

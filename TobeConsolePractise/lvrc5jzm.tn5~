@@ -1,9 +1,10 @@
-﻿using Autofac;
+﻿using System;
+using Autofac;
 using Autofac.Extras.CommonServiceLocator;
 using CommonServiceLocator;
 using Quartz.Spi;
-using System;
 using TobeConsolePractise.QuartzJob;
+using System.Linq;
 
 namespace TobeConsolePractise
 {
@@ -92,7 +93,8 @@ namespace TobeConsolePractise
             //context.Resolve<MyScheduler>().Run().Wait();
             //HoneyPot.Challenges.Run();
             //EMail.TestSmtpMailServer.Run();
-            //ThreadTiming.Run();
+
+            var aaa = DateTime.Now == DateTime.Now;
         }
     }
 }

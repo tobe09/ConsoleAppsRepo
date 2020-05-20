@@ -26,15 +26,14 @@ namespace TobeConsolePractise.QuartzJob
 
             foreach (int id in new int[] { 1, 2 })
             {
-                JobDataMap jobDataMap = new JobDataMap();
-                jobDataMap.Add(new KeyValuePair<string, object>("name", "Tobenna" + id));
+                JobDataMap jobDataMap = new JobDataMap { new KeyValuePair<string, object>("name", "Tobenna" + id) };
 
                 IJobDetail jobDetail = JobBuilder.Create<MyJob>()
                                         .UsingJobData(jobDataMap)
                                         .WithIdentity("Job Detail Id: " + (id + 2))
-                                        .Build();
+                                        .Build(); 
 
-                ITrigger trigger = TriggerBuilder.Create()
+                 ITrigger trigger = TriggerBuilder.Create()
                                         .WithIdentity("Trigger Id: " + (id + 4))
                                         .StartAt(DateTime.Now.AddSeconds(id * 2))
                                         .WithSimpleSchedule(x => x.WithIntervalInSeconds(3).WithRepeatCount(2))

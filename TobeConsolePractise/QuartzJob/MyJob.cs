@@ -7,12 +7,6 @@ namespace TobeConsolePractise.QuartzJob
     class MyJob : IJob
     {
         private static int count = 1;
-        private Hold Hold;
-
-        public MyJob(Hold hold)
-        {
-            Hold = hold;
-        }
 
         public Task Execute(IJobExecutionContext context)
         {
@@ -35,17 +29,4 @@ namespace TobeConsolePractise.QuartzJob
         }
     }
 
-    abstract class Hold
-    {
-        public string Name { get; set; } = "Holder";
-        public abstract string GetName();
-    }
-
-    class ConcreteHold : Hold
-    {
-        public sealed override string GetName()
-        {
-            return Name;
-        }
-    }
 }

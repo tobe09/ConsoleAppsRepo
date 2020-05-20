@@ -40,7 +40,6 @@ C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeC
 C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
 C:\Users\NEPTUNEDEVELOPMENTX\Documents\Others\Tobe\Git\TobeConsolePractise\TobeConsolePractise\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
 C:\Users\FMV01\source\repos\ConsoleAppsRepo\TobeConsolePractise\obj\Debug\TobeConsolePractise.csprojAssemblyReference.cache
-C:\Users\FMV01\source\repos\ConsoleAppsRepo\TobeConsolePractise\obj\Debug\TobeConsolePractise.csproj.CoreCompileInputs.cache
 C:\Users\FMV01\source\repos\ConsoleAppsRepo\TobeConsolePractise\bin\Debug\NUnit3.TestAdapter.dll
 C:\Users\FMV01\source\repos\ConsoleAppsRepo\TobeConsolePractise\bin\Debug\NUnit3.TestAdapter.pdb
 C:\Users\FMV01\source\repos\ConsoleAppsRepo\TobeConsolePractise\bin\Debug\nunit.engine.dll
