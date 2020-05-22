@@ -14,7 +14,8 @@ namespace TobeConsolePractise
 
         private int Mid(int data, int low, int high)
         {
-            return low + ((high - low) * (data - values[low]) / (values[high] - values[low]));
+            int fraction = (data - values[low]) / (values[high] - values[low]);
+            return low + ((high - low) * fraction);
         }
 
         public override int Find(object data)

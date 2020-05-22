@@ -93,6 +93,7 @@ namespace TobeConsolePractise
             //HoneyPot.Challenges.Run();
             //EMail.TestSmtpMailServer.Run();
             //ThreadTiming.Run();
+            //LargestPrimeFactor.Run(6857);
         }
     }
 }

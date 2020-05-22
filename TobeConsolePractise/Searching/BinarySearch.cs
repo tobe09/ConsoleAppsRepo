@@ -20,7 +20,7 @@ namespace TobeConsolePractise
         public override int Find(object data)
         {
             int intData = (int)data;
-            int lowerBound = 0, upperBound = Count() - 1, midPoint = -1, comparisons = 0, index = -1;
+            int lowerBound = 0, upperBound = Count() - 1, comparisons = 0, index = -1;
 
             while (lowerBound <= upperBound)
             {
@@ -29,7 +29,7 @@ namespace TobeConsolePractise
                 Console.WriteLine("LowerBound: {0}, Values[{1}]: {2}", lowerBound, lowerBound, values[lowerBound]);
                 Console.WriteLine("UpperBound: {0}, Values[{1}]: {2}", upperBound, upperBound, values[upperBound]);
 
-                midPoint = MidPoint(lowerBound, upperBound);
+                int midPoint = MidPoint(lowerBound, upperBound);
 
                 if (values[midPoint] == intData)        //data found
                 {

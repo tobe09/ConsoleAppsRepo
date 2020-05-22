@@ -37,7 +37,8 @@ namespace TobeConsolePractise.Cousant
             foreach (char c in clearText)
             {
                 string str = "";
-                int val = c - 96;           //using ascii character notation
+                int beforeLetterA = 'a' - 1;
+                int val = c - beforeLetterA;           //using ascii character notation
                 if (val % 2 == 0)
                 {
                     str += "e";

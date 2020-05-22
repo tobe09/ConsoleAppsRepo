@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TobeConsolePractise
 {
@@ -14,19 +11,19 @@ namespace TobeConsolePractise
 
         public override void Sort(bool showDetail = true)
         {
-            int inner, outer, valueToInsert, interval = 1, max = Count(), i = 0, swaps = 0;
+            int interval = 1, max = Count(), i = 1, swaps = 0;
 
             while (interval <= max / 3)
                 interval = interval * 3 + 1;
 
             while (interval > 0)
             {
-                if (showDetail) Console.WriteLine("Iteration " + (i + 1));
+                if (showDetail) Console.WriteLine("Iteration " + i);
 
-                for (outer = interval; outer < max; outer++)
+                for (int outer = interval; outer < max; outer++)
                 {
-                    valueToInsert = values[outer];
-                    inner = outer;
+                    int valueToInsert = values[outer];
+                    int inner = outer;
                     while (inner >= interval && values[inner - interval] >= valueToInsert)
                     {
                         values[inner] = values[inner - interval];

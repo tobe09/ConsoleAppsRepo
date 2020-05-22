@@ -7,30 +7,38 @@ namespace TobeConsolePractise
     {
         public long LargestPrime(long no)
         {
+            if (IsPrime(no))
+                return no;
+
             long largest = 1;
 
-            long end = no / 2;    //(long)Math.Sqrt(no);
-            //check if values less than half of the number is a factor
-            for (long innerLoop = 2; innerLoop <= end; innerLoop++)
+            long end = (long)Math.Sqrt(no);
+            for (long value = 2; value <= end; value++)
             {
-                if (no % innerLoop == 0)
+                if (no % value == 0)
                 {
-                    long rootInnerLoop = (long)Math.Sqrt(innerLoop);
-                    //check if innerLoop value is prime
-                    int primeCountInnerLoop = 0;
-                    for (int outerLoop = 2; outerLoop <= rootInnerLoop; outerLoop++)
-                    {
-                        if (innerLoop % outerLoop == 0) primeCountInnerLoop++;  //if it is not prime, the count value will be greater than zero
-                    }
+                    if (IsPrime(value) && value > largest)
+                        largest = value;
 
-                    if (primeCountInnerLoop == 0 && innerLoop > largest) largest = innerLoop;
-                    end = no / innerLoop;
+                    long result = no / value;
+                    if (IsPrime(result))
+                        return result;
                 }
             }
 
-            if (largest == 1) largest = no;     //the number is prime which implies that it is its biggest prime factor
-
             return largest;
+        }
+
+        private bool IsPrime(long no)
+        {
+            long root = (long)Math.Sqrt(no);
+            for (int i = 2; i < root; i++)
+            {
+                if (no % i == 0)
+                    return false;
+            }
+
+            return true;
         }
 
         public static void Run(long no = 600851475143)

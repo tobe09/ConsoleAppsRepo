@@ -14,12 +14,12 @@ namespace TobeConsolePractise
 
         public override void Sort(bool showDetail = true)
         {
-            int valueToInsert, holePosition, max = Count(), swaps = 0;
+            int max = Count(), swaps = 0;
 
             for (int i = 0; i < max; i++)
             {
-                valueToInsert = values[i];
-                holePosition = i;
+                int valueToInsert = values[i];
+                int holePosition = i;
 
                 if (showDetail) Console.WriteLine("Iteration {0}", (i + 1));
                 while (holePosition > 0 && values[holePosition - 1] > valueToInsert)    //check previous number with value to insert

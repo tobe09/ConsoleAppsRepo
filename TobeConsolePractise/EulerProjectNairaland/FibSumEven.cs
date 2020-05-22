@@ -18,7 +18,10 @@ namespace TobeConsolePractise
                 previous = present;
                 present = next;
                 next = present + previous;
-                if (present % 2 == 0) evenSum += present;
+
+                if (present % 2 == 0) 
+                    evenSum += present;
+
                 count++;
             }
 

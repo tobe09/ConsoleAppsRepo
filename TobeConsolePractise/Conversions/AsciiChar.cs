@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace TobeConsolePractise
 {
@@ -17,7 +14,6 @@ namespace TobeConsolePractise
             string t = Encoding.ASCII.GetString(sByteEnc);
             t = t.Substring(0, t.Length - 1);
             Console.WriteLine(sByteEnc + " was decoded as " + t);
-            Console.ReadKey();
         }
 
         public static void AsciiCharacters()
@@ -37,7 +33,7 @@ namespace TobeConsolePractise
             Console.ReadKey();
         }
 
-        public static void run()
+        public static void Run()
         {
             EncDecode();
             Console.WriteLine("\r\nNext Program\r\n");

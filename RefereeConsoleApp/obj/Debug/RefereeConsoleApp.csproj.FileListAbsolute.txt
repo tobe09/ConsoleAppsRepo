@@ -21,3 +21,4 @@ C:\Users\FMV01\source\repos\ConsoleAppsRepo\RefereeConsoleApp\bin\Debug\RefereeC
 C:\Users\FMV01\source\repos\ConsoleAppsRepo\RefereeConsoleApp\obj\Debug\RefereeConsoleApp.exe
 C:\Users\FMV01\source\repos\ConsoleAppsRepo\RefereeConsoleApp\obj\Debug\RefereeConsoleApp.pdb
 C:\Users\FMV01\source\repos\ConsoleAppsRepo\RefereeConsoleApp\obj\Debug\RefereeConsoleApp.csprojAssemblyReference.cache
+C:\Users\FMV01\source\repos\ConsoleAppsRepo\RefereeConsoleApp\obj\Debug\RefereeConsoleApp.csproj.CoreCompileInputs.cache

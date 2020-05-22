@@ -15,14 +15,14 @@ namespace TobeConsolePractise
         private List<int> _tempValues = new List<int>();
         private List<int> tempValues
         {
-            get 
+            get
             {
                 if (_tempValues.Count == 0)
                 {
                     for (int i = 0; i < Count(); i++)
                         _tempValues.Add(0);
                 }
-                return _tempValues; 
+                return _tempValues;
             }
             set { tempValues = value; }
         }
@@ -51,11 +51,9 @@ namespace TobeConsolePractise
 
         private void Sort(int low, int high)
         {
-            int mid;
-
             if (low < high)
             {
-                mid = (low + high) / 2;
+                int mid = (low + high) / 2;
                 Sort(low, mid);
                 Sort(mid + 1, high);
                 Merging(low, mid, high);

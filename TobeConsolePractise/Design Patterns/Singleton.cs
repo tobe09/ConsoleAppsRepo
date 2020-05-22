@@ -13,22 +13,27 @@ namespace TobeConsolePractise
         private Singleton() { }
 
         //Single access via property using double check locking (for thread safety)
-        public static Singleton getInstance
+        public static Singleton GetInstance
         {
             get
             {
                 if (_instance == null)
                 {
-                    lock ("") { if (_instance == null) _instance = new Singleton(); }
+                    lock ("")
+                    {
+                        if (_instance == null)
+                            _instance = new Singleton();
+                    }
                 }
+
                 return _instance;
             }
         }
 
         public class TestSingleton
         {
-            Singleton instanceOne = Singleton.getInstance;
-            Singleton instanceTwo = Singleton.getInstance;
+            private readonly Singleton instanceOne = GetInstance;
+            private readonly Singleton instanceTwo = GetInstance;
 
             public void testSingletonUniqueness()
             {

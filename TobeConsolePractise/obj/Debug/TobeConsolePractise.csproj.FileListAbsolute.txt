@@ -97,3 +97,4 @@ C:\Users\FMV01\source\repos\ConsoleAppsRepo\TobeConsolePractise\obj\Debug\TobeCo
 C:\Users\FMV01\source\repos\ConsoleAppsRepo\TobeConsolePractise\obj\Debug\TobeConsolePractise.pdb
 C:\Users\FMV01\source\repos\ConsoleAppsRepo\TobeConsolePractise\bin\Debug\MathLibrary.pdb
 C:\Users\FMV01\source\repos\ConsoleAppsRepo\TobeConsolePractise\bin\Debug\MathLibrary.dll.config
+C:\Users\FMV01\source\repos\ConsoleAppsRepo\TobeConsolePractise\obj\Debug\TobeConsolePractise.csproj.CoreCompileInputs.cache

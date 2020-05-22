@@ -17,3 +17,4 @@ C:\Users\FMV01\source\repos\ConsoleAppsRepo\MathLibrary\bin\Debug\MathLibrary.pd
 C:\Users\FMV01\source\repos\ConsoleAppsRepo\MathLibrary\obj\Debug\MathLibrary.dll
 C:\Users\FMV01\source\repos\ConsoleAppsRepo\MathLibrary\obj\Debug\MathLibrary.pdb
 C:\Users\FMV01\source\repos\ConsoleAppsRepo\MathLibrary\obj\Debug\MathLibrary.csprojAssemblyReference.cache
+C:\Users\FMV01\source\repos\ConsoleAppsRepo\MathLibrary\obj\Debug\MathLibrary.csproj.CoreCompileInputs.cache

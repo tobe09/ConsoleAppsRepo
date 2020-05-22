@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 
@@ -21,9 +20,7 @@ namespace TobeConsolePractise
                 {
                     product = outerLoop * innerLoop;
                     string productStr = product + "";       //convert to string
-                    string reverseProductStr = "";
-                    IEnumerable<char> reverseString = productStr.Reverse();     //reverse string as enumerable characters
-                    foreach (char chr in reverseString) reverseProductStr += chr;       //read each charecter into another string
+                    string reverseProductStr = string.Join("", productStr.Reverse());
                     //check if the string is palindromic and the product is bigger than previous palindromic product
                     if (string.Equals(productStr, reverseProductStr) && product > largestProduct)
                     {

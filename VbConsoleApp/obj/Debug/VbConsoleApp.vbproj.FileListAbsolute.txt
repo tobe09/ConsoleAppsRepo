@@ -37,3 +37,4 @@ C:\Users\FMV01\source\repos\ConsoleAppsRepo\VbConsoleApp\obj\Debug\VbConsoleApp.
 C:\Users\FMV01\source\repos\ConsoleAppsRepo\VbConsoleApp\obj\Debug\VbConsoleApp.xml
 C:\Users\FMV01\source\repos\ConsoleAppsRepo\VbConsoleApp\obj\Debug\VbConsoleApp.pdb
 C:\Users\FMV01\source\repos\ConsoleAppsRepo\VbConsoleApp\obj\Debug\VbConsoleApp.vbprojAssemblyReference.cache
+C:\Users\FMV01\source\repos\ConsoleAppsRepo\VbConsoleApp\obj\Debug\VbConsoleApp.vbproj.CoreCompileInputs.cache

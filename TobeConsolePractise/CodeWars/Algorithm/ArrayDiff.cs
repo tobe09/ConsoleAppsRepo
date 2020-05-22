@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TobeConsolePractise
 {
@@ -23,7 +21,10 @@ namespace TobeConsolePractise
 
             List<int> b1 = b.ToList();
             foreach (int i in a)
-                if (!b1.Contains(i)) newList.Add(i);
+            {
+                if (!b1.Contains(i)) 
+                    newList.Add(i);
+            }
 
             return newList.ToArray();
         }

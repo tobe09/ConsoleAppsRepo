@@ -9,8 +9,11 @@ namespace TobeConsolePractise.HoneyPot
         public static void Run()
         {
             var value = HoneyPot("getltsrqjhe");             //get next greatest combination of alphabets
-            var result = HoneyPot2(new List<int>() { 1,99, 5, 3, 7, 10, 14 });   //sort by binary 1's then by size if equal
+            Console.WriteLine(value);
+            var result = HoneyPot2(new List<int>() { 1, 99, 5, 3, 7, 10, 14 });   //sort by binary 1's then by size if equal
+            Console.WriteLine(string.Join(", ", result));
             var number = ConvertBaseToDecimal("214", 6);
+            Console.WriteLine(number);
         }
 
         public static string HoneyPot(string word)
@@ -40,7 +43,7 @@ namespace TobeConsolePractise.HoneyPot
                 if (index != -1)
                     break;
             }
-            
+
             if (index == -1)
             {
                 return "no answer";
@@ -51,7 +54,7 @@ namespace TobeConsolePractise.HoneyPot
                 string unsortedEndWord = word.Substring(index, replaceIndex - index) + word.Substring(replaceIndex + 1);
 
                 List<char> sortedEndWord = unsortedEndWord.QuickSort((a, b) => a.ToString().CompareTo(b.ToString()));
-                string endWord = sortedEndWord.Aggregate("", (all, c) => all += c);
+                string endWord = string.Join("", sortedEndWord);
 
                 return startWord + endWord;
             }
@@ -78,38 +81,34 @@ namespace TobeConsolePractise.HoneyPot
                 }
             });
 
-            List<int> result = values
-                .Select(x => x.Number)
-                .ToList();
+            List<int> result = values.Select(x => x.Number).ToList();
 
             return result;
         }
 
-        static BaseInfo GetBaseInfo(int number, int _base = 2)
+        static BaseInfo GetBaseInfo(int number, int @base = 2)
         {
-            if (_base < 2)
+            if (@base < 2)
                 throw new ArgumentOutOfRangeException("Enter a base greater than 2");
 
             string result = "";
             int onesCount = 0;
-            double factor = (double)number / _base;
+            double factor = (double)number / @base;
 
             while (factor > 0)
             {
                 double wholeFactor = Math.Floor(factor);
-                int remainder = (int)Math.Ceiling((factor - wholeFactor) * _base);
+                int remainder = (int)Math.Ceiling((factor - wholeFactor) * @base);
 
                 result += remainder;
 
                 if (remainder == 1)
                     onesCount += 1;
 
-                factor = wholeFactor / 2;
+                factor = wholeFactor / @base;
             }
 
-            result = result
-                .Reverse()
-                .Aggregate("", (all, c) => all += c);
+            result = string.Join("", result.Reverse());
 
             return new BaseInfo { Number = number, BaseValue = result, NoOfOnes = onesCount };
         }
@@ -121,18 +120,15 @@ namespace TobeConsolePractise.HoneyPot
             public int NoOfOnes { get; set; }
         }
 
-        static int ConvertBaseToDecimal(string baseValue, int _base = 2)
+        static int ConvertBaseToDecimal(string baseValue, int @base = 2)
         {
-            if (_base < 2)
+            if (@base < 2)
                 throw new ArgumentOutOfRangeException("Enter a base greater than 2");
-
-            int bitValue = 1;
 
             int result = 0;
             for (int i = baseValue.Length - 1; i >= 0; i--)
             {
-                result += int.Parse(baseValue[i].ToString()) * bitValue;
-                bitValue *= _base;
+                result += int.Parse(baseValue[i].ToString()) * (int)Math.Pow(@base, baseValue.Length - i - 1);
             }
 
             return result;
@@ -141,7 +137,7 @@ namespace TobeConsolePractise.HoneyPot
 
     public static class EnumerableHelper
     {
-        public static List<T> QuickSort<T>(this IEnumerable<T> enumerable, Comparison<T> comparer)
+        public static List<T> QuickSort<T>(this IEnumerable<T> enumerable, Func<T, T, int> comparer)
         {
             List<T> values = enumerable.ToList();
             if (values.Count <= 1) return values;
@@ -173,13 +169,9 @@ namespace TobeConsolePractise.HoneyPot
         {
             List<T> allValues = new List<T>();
 
-            foreach (T value in lesser)
-                allValues.Add(value);
-
+            allValues.AddRange(lesser);
             allValues.Add(pivot);
-
-            foreach (T value in greater)
-                allValues.Add(value);
+            allValues.AddRange(greater);
 
             return allValues;
         }
