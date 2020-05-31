@@ -4,3 +4,15 @@
 
 *.lock
 .vs/
+
+TobeConsolePractise/bin
+TobeConsolePractise/obj
+
+MathLibrary/bin
+MathLibrary/obj
+
+RefereeConsoleApp/bin
+RefereeConsoleApp/obj
+
+VbConsoleApp/bin
+VbConsoleApp/obj

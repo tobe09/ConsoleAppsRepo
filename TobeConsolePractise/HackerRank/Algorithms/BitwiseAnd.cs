@@ -17,12 +17,12 @@ namespace TobeConsolePractise
                 for (int i = 0; i < n; i++)
                     values[i] = i + 1;
 
-                int max = 0, binAnd;
+                int max = 0;
                 for (int i = 1; i < n - 1; i++)
                 {
                     for (int j = i + 1; j < n; j++)
                     {
-                        binAnd = values[i] & values[j];
+                        int binAnd = values[i] & values[j];
                         if (binAnd > max && binAnd < k)
                             max = binAnd;
                     }

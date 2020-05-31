@@ -3,6 +3,8 @@ using Autofac.Extras.CommonServiceLocator;
 using CommonServiceLocator;
 using Quartz.Spi;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using TobeConsolePractise.QuartzJob;
 
 namespace TobeConsolePractise
@@ -14,7 +16,7 @@ namespace TobeConsolePractise
     /// <devdoc>Really cool, aint it</devdoc>
     class Program
     {
-        public static void Main(string[] args)
+        public static void Main(string[] _)
         {
             using (var scope = Container)
             {
@@ -54,7 +56,7 @@ namespace TobeConsolePractise
 
     class Application
     {
-        private IComponentContext context;
+        private readonly IComponentContext context;
 
         public Application(IComponentContext context)
         {
@@ -92,7 +94,7 @@ namespace TobeConsolePractise
             //context.Resolve<MyScheduler>().Run().Wait();
             //HoneyPot.Challenges.Run();
             //EMail.TestSmtpMailServer.Run();
-            //ThreadTiming.Run();
+            //ThreadTiming.Run()
             //LargestPrimeFactor.Run(6857);
         }
     }
