@@ -96,6 +96,7 @@ namespace TobeConsolePractise
             //EMail.TestSmtpMailServer.Run();
             //ThreadTiming.Run()
             //LargestPrimeFactor.Run(6857);
+            Observables.Run();
         }
     }
 }
