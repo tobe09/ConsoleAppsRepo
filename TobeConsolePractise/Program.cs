@@ -3,8 +3,6 @@ using Autofac.Extras.CommonServiceLocator;
 using CommonServiceLocator;
 using Quartz.Spi;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using TobeConsolePractise.QuartzJob;
 
 namespace TobeConsolePractise
@@ -56,11 +54,11 @@ namespace TobeConsolePractise
 
     class Application
     {
-        private readonly IComponentContext context;
+        private readonly IComponentContext _;
 
         public Application(IComponentContext context)
         {
-            this.context = context;
+            _ = context;
         }
 
         public void Run()
@@ -96,7 +94,7 @@ namespace TobeConsolePractise
             //EMail.TestSmtpMailServer.Run();
             //ThreadTiming.Run()
             //LargestPrimeFactor.Run(6857);
-            Observables.Run();
+            //Observables.Run();
         }
     }
 }
