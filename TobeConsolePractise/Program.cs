@@ -54,11 +54,8 @@ namespace TobeConsolePractise
 
     class Application
     {
-        private readonly IComponentContext _;
-
-        public Application(IComponentContext context)
+        public Application(IComponentContext _)
         {
-            _ = context;
         }
 
         public void Run()
@@ -95,6 +92,9 @@ namespace TobeConsolePractise
             //ThreadTiming.Run()
             //LargestPrimeFactor.Run(6857);
             //Observables.Run();
+            //FluentValidatorTest.Run();
+
+            //post sharp
         }
     }
 }
