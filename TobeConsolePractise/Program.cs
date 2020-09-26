@@ -93,8 +93,7 @@ namespace TobeConsolePractise
             //LargestPrimeFactor.Run(6857);
             //Observables.Run();
             //FluentValidatorTest.Run();
-
-            //post sharp
+            //PostSharpTest.Run();
         }
     }
 }
