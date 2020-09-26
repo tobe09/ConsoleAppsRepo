@@ -53,7 +53,7 @@ namespace TobeConsolePractise
     abstract class BaseResponse { }
 
     [Serializable]
-    class MethodInterceptor : MethodInterceptionAspect
+    class MethodInterceptor : MethodInterceptionAspect      //Instance Level Aspect Only Avaliable In Paid Version Of PostSharp
     {
         public override void OnInvoke(MethodInterceptionArgs args)
         {
