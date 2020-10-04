@@ -37,8 +37,16 @@ namespace TobeConsolePractise
 
     class Result<T>
     {
-        public string Error { get; set; }
+        private Result() { }
+
+        public Result(string error)
+        {
+            Error = error;
+        }
+
         public T Model { get; set; }
+        public string Error { get; set; }
+
 
         internal static Result<T> Create(T model)
         {
@@ -57,16 +65,11 @@ namespace TobeConsolePractise
     {
         public override void OnInvoke(MethodInterceptionArgs args)
         {
-            foreach (object arg in args.Arguments)
+            if (args.Arguments[0] is int arg && arg > 10)
             {
-                if (arg is int && (int)arg > 10)
-                {
-                    var type = ((dynamic)args.Method).ReturnType as Type;
-                    dynamic result = Activator.CreateInstance(type);
-                    result.Error = "Chaye";
-                    args.ReturnValue = result;
-                    return;
-                }
+                var type = ((dynamic)args.Method).ReturnType as Type;
+                args.ReturnValue = Activator.CreateInstance(type, "Chaye");
+                return;
             }
 
             args.Proceed();

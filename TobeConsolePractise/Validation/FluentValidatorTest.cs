@@ -16,7 +16,7 @@ namespace TobeConsolePractise
     }
 
     [Validator(typeof(CustomerValidator))]
-    class Customer : BaseRequest
+    public class Customer : BaseRequest
     {
         public string Name { get; set; }
         public int Age { get; set; }
@@ -33,7 +33,7 @@ namespace TobeConsolePractise
         }
     }
 
-    class Address
+    public class Address
     {
         public string Value { get; set; }
     }
@@ -56,12 +56,12 @@ namespace TobeConsolePractise
         public Type Type { get; }
     }
 
-    interface IValidatable
+    internal interface IValidatable
     {
         ValidationResult Validate();
     }
 
-    abstract class BaseRequest : IValidatable
+    public abstract class BaseRequest : IValidatable
     {
         public ValidationResult Validate()
         {
